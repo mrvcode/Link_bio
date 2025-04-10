@@ -11,22 +11,23 @@ class State(rx.State):
 def index() -> rx.Component:
     return rx.vstack(
         navbar(),
+        rx.spacer(height="50px"),  # Espaciador grande con unidades px
         rx.vstack(
             header(),
             links(),
-            align="center",  # Alinea los elementos horizontalmente al centro
-            spacing="6",  # Mayor espaciado entre header y links
-            width="100%",  # Ocupa todo el ancho disponible
-            max_width="800px",  # Limita el ancho máximo para mejor apariencia
-            margin="0 auto",  # Centra el contenedor en la página
-            padding_x="4",  # Padding horizontal
-            padding_y="4",  # Padding vertical
-            background="black",  # Fondo negro como en la imagen
-            min_height="100vh",  # Altura mínima para ocupar toda la pantalla
+            align="center",
+            spacing="9",  # Valor máximo permitido: 9
+            width="100%",
+            max_width="900px",
+            margin="0 auto",
+            padding_x="4",
+            padding_y="8",  # Valor máximo permitido: 9
+            background="black",
+            min_height="100vh",
         ),
-        width="100%",  # El vstack principal ocupa todo el ancho
-        spacing="0",  # Sin espacio extra entre navbar y contenido
-        background="black",  # Fondo negro para toda la página
+        width="100%",
+        spacing="9",  # Valor máximo permitido: 9
+        background="black",
     )
 
 
