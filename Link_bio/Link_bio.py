@@ -5,6 +5,7 @@ from Link_bio.views.header.header import header
 from Link_bio.views.links.links import links
 from Link_bio.views.creacion import creacion
 from Link_bio.styles.styles import styles
+from Link_bio.styles.styles import Size as Size
 
 
 def index() -> rx.Component:
@@ -33,7 +34,7 @@ def index() -> rx.Component:
                         width="100%",
                         max_width=styles.MAX_WIDTH,
                         margin_x="20px",
-                        margin_y=styles.SMALL,
+                        margin_y=Size.SMALL.value,
                         # background="rgba(0,0,0,0.5)",  # Fondo oscuro para el contenido
                         border_radius="12px",
                         padding="20px",
@@ -59,6 +60,6 @@ def index() -> rx.Component:
     )
 
 
-app = rx.App()
+app = rx.App(style=styles.BASE_STYLE)
 app.add_page(index)
 app.add_page(creacion, route="/creacion")

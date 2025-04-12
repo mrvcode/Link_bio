@@ -1,4 +1,5 @@
 import reflex as rx
+from Link_bio.styles.styles import styles  # ✅ Asegúrate de importar los estilos
 
 
 def header() -> rx.Component:
@@ -6,7 +7,7 @@ def header() -> rx.Component:
         # Avatar personalizado con fondo semitransparente
         rx.box(
             rx.text(
-                "V3D", font_size="2em", color="#cf6fd0", font_weight="bold"
+                "V3D", font_size="2em", color=styles.TEXT_COLOR_AVATAR, font_weight="bold"
             ),  # Color morado
             background="rgba(0, 0, 0, 0.3)",  # Fondo negro semitransparente
             border_radius="15px",
