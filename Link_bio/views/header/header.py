@@ -3,9 +3,27 @@ import reflex as rx
 
 def header() -> rx.Component:
     return rx.vstack(
-        rx.avatar(fallback="V3D", font_size=50, name="Logo Mochilas V3D", size="9"),
-        rx.text("Mochilas V3D", align="center"),
-        rx.text("TU IMAGINACIÓN, TUS REGLAS", align="center"),
+        # Avatar personalizado con fondo semitransparente
+        rx.box(
+            rx.text(
+                "V3D", font_size="2em", color="#cf6fd0", font_weight="bold"
+            ),  # Color morado
+            background="rgba(0, 0, 0, 0.3)",  # Fondo negro semitransparente
+            border_radius="15px",
+            padding="20px",
+            width="90px",
+            height="90px",
+            display="flex",
+            align_items="center",
+            justify_content="center",
+        ),
+        rx.text("Mochilas V3D", align="center", font_size="1.5em", color="white"),
+        rx.text(
+            "TU IMAGINACIÓN, TUS REGLAS",
+            align="center",
+            font_size="1.2em",
+            color="white",
+        ),
         rx.text(
             """¡Desata tu creatividad con las revolucionarias Mochilas 3D!
             Creadas mediante la más avanzada impresión tridimensional,
@@ -20,6 +38,9 @@ def header() -> rx.Component:
             te define. ¡Explora un nuevo horizonte de posibilidades
             y lleva contigo una obra de arte funcional!""",
             align="center",
+            color="white",
+            padding_x="10px",
         ),
         align="center",  # Centra los elementos internos del vstack del header
+        spacing="3",
     )

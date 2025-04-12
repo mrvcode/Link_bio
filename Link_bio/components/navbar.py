@@ -11,7 +11,6 @@ def navbar() -> rx.Component:
         width="100%",  # Ocupa todo el ancho
         position="sticky",
         top=0,  # Asegura que se pegue a la parte superior
-        bg="blue",
         padding_x=16,
         padding_y=8,
         z_index=999,
