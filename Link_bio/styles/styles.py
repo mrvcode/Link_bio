@@ -10,16 +10,17 @@ class Color(str, Enum):
     GREEN_LIGHT = "#0f828e"
     GREEN_MEDIUM = "#062821"
     BLACK = "#000000"
+    WHITE = "#F1F1F1"
 
 
 class Size(Enum):
-    SMALL = "0.5em"
-    DEFAULT = "1em"
-    BIG = "2em"
+    SMALL = "1.2em"
+    DEFAULT = "1.8em"
+    BIG = "2.3em"
 
 
 class StyleConstants(Enum):
-    MAX_WIDTH = "900px"
+    MAX_WIDTH = "1000px"
 
 
 class styles:
@@ -41,12 +42,9 @@ class styles:
 
     BUTTON_BIG = {
         "width": "280px",
-        "height": "360px",
+        "height": "300px",
         "border_radius": Size.DEFAULT.value,
-        "bg": Color.GREEN_LIGHT.value,
-        "color": "white",
         "font_weight": "normal",
-        "_hover": {"bg": Color.GREEN_MEDIUM.value},
         "margin": "0",
         "padding": Size.SMALL.value,
         # "padding": "8px",
@@ -54,11 +52,9 @@ class styles:
         "align_items": "center",
         "justify_content": "center",
         "text_align": "center",
+        "color": Color.WHITE.value,
+        "bg": Color.GREEN_LIGHT.value,
+        "_hover": {"bg": Color.GREEN_MEDIUM.value},
     }
 
-    BASE_STYLE = {
-        rx.link : {
-            "text_decoration": "none",
-            "_hover": {}
-        }
-    }
+    BASE_STYLE = {rx.link: {"text_decoration": "none", "_hover": {}}}

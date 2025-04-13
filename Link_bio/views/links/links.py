@@ -7,7 +7,7 @@ def links() -> rx.Component:
         rx.box(
             rx.hstack(
                 link_button("Area de", "creación", "/creacion"),
-                link_button("Accesorios", "", "/accesorios"),
+                link_button("Accesorios", "", "/creacion"),
                 spacing="5",
                 justify="center",
                 width="100%",

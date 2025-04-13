@@ -1,46 +1,66 @@
 import reflex as rx
-from Link_bio.styles.styles import styles  # ✅ Asegúrate de importar los estilos
+
+from Link_bio.styles.styles import Size as Size
+from Link_bio.styles.styles import Color as Color
 
 
 def header() -> rx.Component:
+    primera_columna_texto = """¡Desata tu creatividad con las revolucionarias Mochilas 3D!
+    Creadas mediante la más avanzada impresión tridimensional,
+    estas piezas únicas van mucho más allá de lo convencional.
+    Implementalas a tu gusto, personalizando cada detalle para reflejar
+    tu estilo inconfundible. Sumérgete en un universo
+    de gran colorido y diseños vibrantes, donde la utilidad se fusiona
+    con la innovación."""
+
+    segunda_columna_texto = """Si buscas lo mejor del mercado en personalización
+    y funcionalidad, has llegado al destino ideal.
+    En nuestra web de venta nacional, te ofrecemos la oportunidad de
+    poseer una mochila que no solo te acompaña, sino que también
+    te define. ¡Explora un nuevo horizonte de posibilidades
+    y lleva contigo una obra de arte funcional!"""
+
     return rx.vstack(
-        # Avatar personalizado con fondo semitransparente
-        rx.box(
-            rx.text(
-                "V3D", font_size="2em", color=styles.TEXT_COLOR_AVATAR, font_weight="bold"
-            ),  # Color morado
-            background="rgba(0, 0, 0, 0.3)",  # Fondo negro semitransparente
-            border_radius="15px",
-            padding="20px",
-            width="90px",
-            height="90px",
-            display="flex",
-            align_items="center",
-            justify_content="center",
+        rx.text(
+            "Mochilas V3D",
+            align="center",
+            font_size=Size.DEFAULT.value,
+            color=Color.WHITE.value,
         ),
-        rx.text("Mochilas V3D", align="center", font_size="1.5em", color="white"),
         rx.text(
             "TU IMAGINACIÓN, TUS REGLAS",
             align="center",
-            font_size="1.2em",
-            color="white",
+            font_size=Size.DEFAULT.value,
+            color=Color.WHITE.value,
         ),
-        rx.text(
-            """¡Desata tu creatividad con las revolucionarias Mochilas 3D!
-            Creadas mediante la más avanzada impresión tridimensional,
-            estas piezas únicas van mucho más allá de lo convencional.
-            Implementalas a tu gusto, personalizando cada detalle para reflejar
-            tu estilo inconfundible. Sumérgete en un universo
-            de gran colorido y diseños vibrantes, donde la utilidad se fusiona
-            con la innovación. Si buscas lo mejor del mercado en personalización
-            y funcionalidad, has llegado al destino ideal.
-            En nuestra web de venta nacional, te ofrecemos la oportunidad de
-            poseer una mochila que no solo te acompaña, sino que también
-            te define. ¡Explora un nuevo horizonte de posibilidades
-            y lleva contigo una obra de arte funcional!""",
-            align="center",
-            color="white",
-            padding_x="10px",
+        rx.hstack(  # Usamos hstack para las dos columnas
+            rx.box(  # Contenedor para la primera columna
+                rx.text(
+                    primera_columna_texto,
+                    style={"textAlign": "justify"},  # Aplica la justificación con style
+                    color=Color.WHITE.value,
+                    padding_x="10px",
+                    font_size=Size.SMALL.value,
+                    # white_space="pre-line",  # Respeta los saltos de línea
+                ),
+                width="50%",  # Establece el ancho al 50%
+                padding_right="1em",  # Añade un poco de espacio a la derecha
+            ),
+            rx.box(  # Contenedor para la segunda columna
+                rx.text(
+                    segunda_columna_texto,
+                    style={"textAlign": "justify"},  # Aplica la justificación con style
+                    color=Color.WHITE.value,
+                    padding_x="10px",
+                    font_size=Size.SMALL.value,
+                    # white_space="pre-line",  # Respeta los saltos de línea
+                ),
+                width="50%",  # Establece el ancho al 50%
+                padding_left="1em",  # Añade un poco de espacio a la izquierda
+            ),
+            justify="center",  # Centra las columnas horizontalmente (opcional, ya ocupan el 100%)
+            width="100%",
+            spacing="0",  # El espacio ahora se gestiona con padding en los rx.box
         ),
         align="center",  # Centra los elementos internos del vstack del header
         spacing="3",

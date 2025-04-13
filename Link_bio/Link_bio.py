@@ -1,11 +1,11 @@
 import reflex as rx
-from Link_bio.components.navbar import navbar
 from Link_bio.components.footer import footer
 from Link_bio.views.header.header import header
 from Link_bio.views.links.links import links
 from Link_bio.views.creacion import creacion
 from Link_bio.styles.styles import styles
 from Link_bio.styles.styles import Size as Size
+from Link_bio.components.navbar import navbar
 
 
 def index() -> rx.Component:
