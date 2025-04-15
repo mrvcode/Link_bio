@@ -2,6 +2,6 @@
 .states
 assets/external/
 *.py[cod]
-.web
+# .web
 __pycache__/
-.venv/
+# .venv/
