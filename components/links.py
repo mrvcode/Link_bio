@@ -1,5 +1,5 @@
 import reflex as rx
-from Link_bio.components.link_button import link_button
+from components.link_button import link_button
 
 
 def links() -> rx.Component:
@@ -8,9 +8,10 @@ def links() -> rx.Component:
             rx.hstack(
                 link_button("Area de", "creación", "/creacion"),
                 link_button("Accesorios", "", "/creacion"),
-                spacing="5",
+                spacing="9",
                 justify="center",
                 width="100%",
+                margin_y="25px",
             ),
             width="100%",
         ),
@@ -22,9 +23,10 @@ def links() -> rx.Component:
                     text_line1="Mochilas", text_line2="Originales", url="/creacion"
                 ),
                 link_button(text_line1="Extras", text_line2="", url="/creacion"),
-                spacing="5",
+                spacing="9",
                 justify="center",
                 width="100%",
+                margin_y="25px",
             ),
             width="100%",
         ),
@@ -32,6 +34,6 @@ def links() -> rx.Component:
         align_items="center",
         justify="center",
         padding="0",
-        margin_top="30px",
-        margin_bottom="30px",
+        margin_top="100px",
+        margin_bottom="50px",
     )

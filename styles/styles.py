@@ -11,6 +11,7 @@ class Color(str, Enum):
     GREEN_MEDIUM = "#062821"
     BLACK = "#000000"
     WHITE = "#F1F1F1"
+    ICON_COLOR = "#00FFAA"
 
 
 class Size(Enum):
@@ -20,7 +21,7 @@ class Size(Enum):
 
 
 class StyleConstants(Enum):
-    MAX_WIDTH = "1000px"
+    MAX_WIDTH = "900px"
 
 
 class styles:
@@ -58,3 +59,18 @@ class styles:
     }
 
     BASE_STYLE = {rx.link: {"text_decoration": "none", "_hover": {}}}
+
+    # Estilo para los tooltips animados (texto junto a icono al pasar el ratón)
+    TOOLTIP_HOVER_CSS = """
+    .nav-link:hover .tooltip-text {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    """
+
+    # Estilo de hover general para animar iconos
+    ICON_HOVER_STYLE = {
+        "transform": "scale(1.2)",
+        "transition": "transform 0.2s ease",
+        "filter": "brightness(1.3)",
+    }

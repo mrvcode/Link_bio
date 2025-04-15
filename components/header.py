@@ -1,7 +1,5 @@
 import reflex as rx
-
-from Link_bio.styles.styles import Size as Size
-from Link_bio.styles.styles import Color as Color
+from styles.styles import Color, Size
 
 
 def header() -> rx.Component:
@@ -21,17 +19,29 @@ def header() -> rx.Component:
     y lleva contigo una obra de arte funcional!"""
 
     return rx.vstack(
-        rx.text(
-            "Mochilas V3D",
-            align="center",
-            font_size=Size.DEFAULT.value,
-            color=Color.WHITE.value,
+        rx.box(  # Avatar
+            rx.text(
+                "V3D",
+                font_size=Size.BIG.value,
+                color=Color.VIOLET_LIGHT.value,
+                font_weight="bold",
+                filter="brightness(1.3)",
+            ),
+            background="rgba(0, 0, 0, 0.3)",
+            border_radius="15px",
+            padding="20px",
+            width="90px",
+            height="90px",
+            display="flex",
+            align_items="center",
+            justify_content="center",
         ),
         rx.text(
             "TU IMAGINACIÓN, TUS REGLAS",
             align="center",
             font_size=Size.DEFAULT.value,
             color=Color.WHITE.value,
+            padding_y="10px",
         ),
         rx.hstack(  # Usamos hstack para las dos columnas
             rx.box(  # Contenedor para la primera columna
@@ -41,7 +51,6 @@ def header() -> rx.Component:
                     color=Color.WHITE.value,
                     padding_x="10px",
                     font_size=Size.SMALL.value,
-                    # white_space="pre-line",  # Respeta los saltos de línea
                 ),
                 width="50%",  # Establece el ancho al 50%
                 padding_right="1em",  # Añade un poco de espacio a la derecha
@@ -53,7 +62,6 @@ def header() -> rx.Component:
                     color=Color.WHITE.value,
                     padding_x="10px",
                     font_size=Size.SMALL.value,
-                    # white_space="pre-line",  # Respeta los saltos de línea
                 ),
                 width="50%",  # Establece el ancho al 50%
                 padding_left="1em",  # Añade un poco de espacio a la izquierda
