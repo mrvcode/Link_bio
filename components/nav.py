@@ -4,6 +4,7 @@ from styles.styles import styles, Color
 
 # Lista de iconos del menú con texto y enlace
 menu_items = [
+    {"icon": "shopping-cart", "text": "Carrito", "link": "/carrito"},
     {"icon": "home", "text": "Inicio", "link": "/"},
     {"icon": "user", "text": "Sobre mí", "link": "/sobremi"},
     {"icon": "book", "text": "Proyectos", "link": "/proyectos"},

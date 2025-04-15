@@ -19,26 +19,28 @@ def header() -> rx.Component:
     y lleva contigo una obra de arte funcional!"""
 
     return rx.vstack(
-        rx.box(  # Avatar
-            rx.text(
-                "V3D",
-                font_size=Size.BIG.value,
-                color=Color.VIOLET_LIGHT.value,
-                font_weight="bold",
-                filter="brightness(1.3)",
-            ),
-            background="rgba(0, 0, 0, 0.3)",
-            border_radius="15px",
-            padding="20px",
-            width="90px",
-            height="90px",
-            display="flex",
-            align_items="center",
-            justify_content="center",
-        ),
+rx.box(  # Avatar
+    rx.text(
+        "V3D",
+        font_size=Size.BIG.value,
+        color=Color.VIOLET_LIGHT.value,
+        font_weight="bold",
+        filter="brightness(1.3)",
+    ),
+    background="rgba(0, 0, 0, 0.2)",
+    border_radius="15px",
+    padding="20px",
+    width="90px",
+    height="90px",
+    display="flex",
+    align_items="center",
+    justify_content="center",
+    border="2px solid " + Color.VIOLET_LIGHT.value,  # Añadimos el borde
+),
         rx.text(
             "TU IMAGINACIÓN, TUS REGLAS",
             align="center",
+            font_weight="bold",
             font_size=Size.DEFAULT.value,
             color=Color.WHITE.value,
             padding_y="10px",

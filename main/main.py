@@ -4,12 +4,16 @@ from components.footer import footer
 from components.header import header
 from components.links import links
 from pages.creacion import creacion
+from pages.originales import originales
+from pages.accesorios import accesorios
+from pages.extras import extras
 from styles.styles import styles
 
 # Metadatos para la página de inicio
 home_title = "Mochilas V3D | Diseño Innovador y Personalizado"
 home_description = "Descubre la colección de mochilas 3D únicas y personalizables. Expresa tu estilo con diseños vibrantes y funcionales."
 home_preview_image = "/assets/mochilas_3d_preview.jpg"
+
 
 # Layout común para todas las páginas
 def layout(page: rx.Component) -> rx.Component:
@@ -34,6 +38,7 @@ def layout(page: rx.Component) -> rx.Component:
         width="100%",
     )
 
+
 def index() -> rx.Component:
     """
     Página de inicio que muestra el header, links y footer.
@@ -46,7 +51,7 @@ def index() -> rx.Component:
                 left="0",
                 width="100%",
                 height="100%",
-                bg=styles.BACKGROUND_OVERLAY,
+                # bg=styles.BACKGROUND_OVERLAY,
                 z_index="0",
             ),
             rx.vstack(
@@ -83,6 +88,7 @@ def index() -> rx.Component:
         min_height="100vh",
     )
 
+
 # Inicializa la aplicación Reflex
 app = rx.App(
     style=styles.BASE_STYLE,
@@ -114,3 +120,6 @@ app.add_page(
     ],
 )
 app.add_page(lambda: layout(creacion()), route="/creacion", title="Creación")
+app.add_page(lambda: layout(accesorios()), route="/accesorios", title="Accesorios")
+app.add_page(lambda: layout(originales()), route="/originales", title="Originales")
+app.add_page(lambda: layout(extras()), route="/extras", title="Extras")

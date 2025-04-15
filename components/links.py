@@ -7,7 +7,7 @@ def links() -> rx.Component:
         rx.box(
             rx.hstack(
                 link_button("Area de", "creación", "/creacion"),
-                link_button("Accesorios", "", "/creacion"),
+                link_button("Accesorios", "", "/accesorios"),
                 spacing="9",
                 justify="center",
                 width="100%",
@@ -20,9 +20,9 @@ def links() -> rx.Component:
             rx.hstack(
                 # Aquí aseguramos que Mochilas y Originales estén separados
                 link_button(
-                    text_line1="Mochilas", text_line2="Originales", url="/creacion"
+                    text_line1="Mochilas", text_line2="Originales", url="/originales"
                 ),
-                link_button(text_line1="Extras", text_line2="", url="/creacion"),
+                link_button(text_line1="Extras", text_line2="", url="/extras"),
                 spacing="9",
                 justify="center",
                 width="100%",
