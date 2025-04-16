@@ -10,7 +10,11 @@ def extras() -> rx.Component:
         rx.vstack(
             rx.heading("Área de Creación", size="2", color=Color.WHITE.value),
             rx.text(
-                "Aquí podrás personalizar tu mochila V3D",
+                """Aquí podrás personalizar tu mochila V3D
+                Fondos de pantalla 3D de tu mochila personalizada
+                Manual de cuidados
+                Stickers digitales para redes
+                Tutoriales de cómo montar/desmontar""",
                 color=Color.WHITE.value,
                 font_size=Size.DEFAULT.value,
                 text_align="center",

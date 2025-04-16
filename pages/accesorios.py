@@ -1,43 +1,92 @@
 import reflex as rx
-from styles.styles import styles, Color, Size
+from components.cards_accesorios.individual_card_accesorios import (
+    individual_card_accesorios,
+)
+from styles.styles import styles
+
+# Datos de ejemplo
+ACCESORIOS = [
+    {
+        "id": 1,
+        "nombre": "Pencil Case",
+        "descripcion": "/imagen_accesorios/accesorio.jpg",
+        "imagen": "/pencil_case.jpg",
+    },
+    {
+        "id": 2,
+        "nombre": "Water Bag 3L",
+        "descripcion": "Drink wherever",
+        "imagen": "/imagen_accesorios/accesorio.jpg",
+    },
+    {
+        "id": 3,
+        "nombre": "Rain Cover",
+        "descripcion": "Protect yourself",
+        "imagen": "/imagen_accesorios/accesorio.jpg",
+    },
+    # ... más accesorios
+]
+
+# Define el layout de la cuadricula.
+GRID_LAYOUT = [
+    {"width": "220px", "height": "150px"},
+    {"width": "220px", "height": "300px"},
+    {"width": "220px", "height": "300px"},
+    {"width": "220px", "height": "150px"},
+    {"width": "220px", "height": "150px"},
+    {"width": "220px", "height": "150px"},
+    {"width": "220px", "height": "300px"},
+    {"width": "220px", "height": "150px"},
+    {"width": "220px", "height": "150px"},
+    {"width": "220px", "height": "300px"},
+    {"width": "220px", "height": "150px"},
+    {"width": "220px", "height": "150px"},
+    {"width": "220px", "height": "150px"},
+    {"width": "220px", "height": "300px"},
+    {"width": "220px", "height": "150px"},
+    {"width": "220px", "height": "300px"},
+    {"width": "220px", "height": "300px"},
+]
 
 
 def accesorios() -> rx.Component:
-    """
-    Página de creación que muestra opciones para crear mochilas personalizadas.
-    """
-    return rx.box(
-        rx.vstack(
-            rx.heading("Área de Creación", size="2", color=Color.WHITE.value),
-            rx.text(
-                "Aquí podrás personalizar tu mochila V3D",
-                color=Color.WHITE.value,
-                font_size=Size.DEFAULT.value,
-                text_align="center",
-            ),
-            rx.spacer(height="2em"),
-            rx.box(
-                rx.text(
-                    "Próximamente disponible...",
-                    color=Color.VIOLET_LIGHT.value,
-                    font_size=Size.BIG.value,
-                    font_weight="bold",
+    items = []
+    for i, accesorio in enumerate(ACCESORIOS):
+        # Obtenemos el tamaño correspondiente del diseño
+        size = GRID_LAYOUT[i % len(GRID_LAYOUT)]
+        items.append(
+            rx.link(
+                individual_card_accesorios(
+                    nombre=accesorio["nombre"],
+                    descripcion=accesorio["descripcion"],
+                    imagen=accesorio["imagen"],
+                    width=size["width"],
+                    height=size["height"],
                 ),
-                padding="2em",
-                background="rgba(0, 0, 0, 0.3)",
-                border_radius="15px",
-            ),
-            spacing="5",
-            align="center",
-            padding="3em",
-            max_width=styles.MAX_WIDTH,
-            margin="0 auto",
+                href=f"/accesorios/{accesorio['id']}",
+                style={"text_decoration": "none"},
+            )
+        )
+
+    return rx.box(
+        rx.box(
+            rx.text("Accesorios", font_size="1.5em", font_weight="bold", color="white"),
+            position="absolute",
+            top="1em",
+            right="2em",
+            z_index="10",
+        ),
+        rx.flex(
+            *items,
+            flex_wrap="wrap",  # Permite que los elementos se envuelvan a la siguiente fila
+            justify_content="center",  # Centra los elementos horizontalmente
         ),
         background_image=styles.BACKGROUND_GRADIENT,
         background_size="cover",
         background_repeat="no-repeat",
-        background_attachment="fixed",
         background_position="center",
         width="100%",
         min_height="100vh",
+        padding="2em",
+        position="relative",
     )
