@@ -12,6 +12,7 @@ class Color(str, Enum):
     BLACK = "#000000"
     WHITE = "#F1F1F1"
     ICON_COLOR = "#00FFAA"
+    FONDO_CARDS = "rgba(0, 0, 0, 0.5)"
 
 
 class Size(Enum):

@@ -32,7 +32,7 @@ def page_card_originales(id: int) -> rx.Component:
             rx.heading(
                 producto["nombre"],
                 font_size=Size.BIG.value,
-                color=Color.VIOLET_LIGHT.value,
+                color=Color.WHITE.value,
                 text_align="center",
             ),
             padding="2em 0",
@@ -72,7 +72,7 @@ def page_card_originales(id: int) -> rx.Component:
                     width="300px",
                     height="auto",
                     border_radius="10px",
-                    box_shadow="lg",
+                    
                 ),
                 margin_left="2em",
             ),
@@ -84,7 +84,7 @@ def page_card_originales(id: int) -> rx.Component:
         rx.text(
             f"Precio: {producto['precio']}",
             font_size=Size.DEFAULT.value,
-            color=Color.VIOLET_LIGHT.value,
+            color=Color.WHITE.value,
             text_align="center",
             padding="2em",
         ),

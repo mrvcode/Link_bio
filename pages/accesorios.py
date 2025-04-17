@@ -9,8 +9,8 @@ ACCESORIOS = [
     {
         "id": 1,
         "nombre": "Pencil Case",
-        "descripcion": "/imagen_accesorios/accesorio.jpg",
-        "imagen": "/pencil_case.jpg",
+        "descripcion": "Pencils near you",
+        "imagen": "/imagen_accesorios/accesorio.jpg",
     },
     {
         "id": 2,

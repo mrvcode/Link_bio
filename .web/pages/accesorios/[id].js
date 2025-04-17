@@ -4,7 +4,7 @@
 import { Fragment } from "react"
 import { Box as RadixThemesBox, Flex as RadixThemesFlex, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
 import NextLink from "next/link"
-import { Book as LucideBook, Heart as LucideHeart, Home as LucideHome, Mail as LucideMail, Send as LucideSend, ShoppingCart as LucideShoppingCart, User as LucideUser } from "lucide-react"
+import { Book as LucideBook, Home as LucideHome, Mail as LucideMail, ShoppingCart as LucideShoppingCart, User as LucideUser } from "lucide-react"
 import NextHead from "next/head"
 
 
@@ -95,118 +95,13 @@ export default function Component() {
 </RadixThemesFlex>
 <RadixThemesBox css={({ ["flex"] : "1", ["minHeight"] : "100vh" })}>
 
-<RadixThemesBox css={({ ["backgroundImage"] : "radial-gradient(circle at 20% 30%, #1fcdae 0%, transparent 40%), radial-gradient(circle at 70% 20%, #cf6fd0 0%, transparent 40%), radial-gradient(circle at 40% 80%, #0a97b4 0%, transparent 40%), linear-gradient(to bottom, #000000, #000000)", ["backgroundSize"] : "cover", ["backgroundRepeat"] : "no-repeat", ["backgroundPosition"] : "center", ["width"] : "100%", ["minHeight"] : "100vh", ["padding"] : "2em", ["position"] : "relative" })}>
+<RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
 
-<RadixThemesBox css={({ ["position"] : "absolute", ["top"] : "1em", ["right"] : "2em", ["zIndex"] : "10" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["fontSize"] : "1.8em" })}>
 
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.5em", ["fontWeight"] : "bold", ["color"] : "white" })}>
-
-{"Accesorios"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesFlex css={({ ["flexWrap"] : "wrap", ["justifyContent"] : "center" })}>
-
-<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
-
-<NextLink href={"/accesorios/1"} passHref={true}>
-
-<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "150px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["height"] : "100%" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "flex-start" })} direction={"column"} gap={"1"}>
-
-<RadixThemesText as={"p"} css={({ ["fontWeight"] : "bold", ["fontSize"] : "1.2em" })}>
-
-{"Pencil Case"}
-</RadixThemesText>
-<RadixThemesText as={"p"}>
-
-{"Pencils near you"}
+{"No se proporcion\u00f3 un ID de accesorio."}
 </RadixThemesText>
 </RadixThemesFlex>
-<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/imagen_accesorios/accesorio.jpg"}/>
-</RadixThemesFlex>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<LucideHeart css={({ ["color"] : "black" })} size={20}/>
-<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
-<LucideSend css={({ ["color"] : "black" })} size={20}/>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesBox>
-</NextLink>
-</RadixThemesLink>
-<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
-
-<NextLink href={"/accesorios/2"} passHref={true}>
-
-<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "300px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["height"] : "100%" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "flex-start" })} direction={"column"} gap={"1"}>
-
-<RadixThemesText as={"p"} css={({ ["fontWeight"] : "bold", ["fontSize"] : "1.2em" })}>
-
-{"Water Bag 3L"}
-</RadixThemesText>
-<RadixThemesText as={"p"}>
-
-{"Drink wherever"}
-</RadixThemesText>
-</RadixThemesFlex>
-<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/imagen_accesorios/accesorio.jpg"}/>
-</RadixThemesFlex>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<LucideHeart css={({ ["color"] : "black" })} size={20}/>
-<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
-<LucideSend css={({ ["color"] : "black" })} size={20}/>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesBox>
-</NextLink>
-</RadixThemesLink>
-<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
-
-<NextLink href={"/accesorios/3"} passHref={true}>
-
-<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "300px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["height"] : "100%" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "flex-start" })} direction={"column"} gap={"1"}>
-
-<RadixThemesText as={"p"} css={({ ["fontWeight"] : "bold", ["fontSize"] : "1.2em" })}>
-
-{"Rain Cover"}
-</RadixThemesText>
-<RadixThemesText as={"p"}>
-
-{"Protect yourself"}
-</RadixThemesText>
-</RadixThemesFlex>
-<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/imagen_accesorios/accesorio.jpg"}/>
-</RadixThemesFlex>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<LucideHeart css={({ ["color"] : "black" })} size={20}/>
-<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
-<LucideSend css={({ ["color"] : "black" })} size={20}/>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesBox>
-</NextLink>
-</RadixThemesLink>
-</RadixThemesFlex>
-</RadixThemesBox>
 </RadixThemesBox>
 <RadixThemesBox css={({ ["width"] : "100%", ["paddingTop"] : "20px", ["paddingBottom"] : "20px", ["marginTop"] : "auto" })}>
 
@@ -231,7 +126,7 @@ export default function Component() {
 
 <title>
 
-{"Accesorios"}
+{"Detalle Accesorio"}
 </title>
 <meta content={"favicon.ico"} property={"og:image"}/>
 </NextHead>

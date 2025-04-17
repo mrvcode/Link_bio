@@ -7,17 +7,10 @@ def complement_individual_card(
     nombre: str,
     imagen: str,
     precio: str,
-    color_avatar: str = Color.VIOLET_LIGHT.value  # ✅ valor por defecto
+    color_avatar: str = Color.VIOLET_LIGHT.value,  # ✅ valor por defecto
 ) -> rx.Component:
     return base_card(
         rx.vstack(
-            rx.image(
-                src=imagen,
-                width="100%",
-                height="200px",
-                object_fit="cover",
-                border_top_radius="15px",
-            ),
             rx.hstack(
                 # Avatar a la izquierda
                 rx.box(
@@ -41,30 +34,52 @@ def complement_individual_card(
                 # Nombre del producto
                 rx.text(
                     nombre,
-                    font_size="1.1em",
+                    font_size=Size.SMALL.value,
                     font_weight="bold",
                     text_align="center",
                     flex="1",
+                    margin="0 0 0 10px ",
                 ),
-                spacing="4",  # Cambiado de "1em" a un valor válido "4"
+                spacing="4",
                 align="center",
                 width="100%",
-                justify="center"
+                justify="between",  # Modificamos justify para separar avatar y nombre
             ),
-            # Precio debajo
+            rx.image(
+                src=imagen,
+                width="100%",
+                height="200px",
+                object_fit="cover",
+                border_top_radius="15px",
+            ),
+            # Precio e iconos
             rx.hstack(
-                rx.icon(tag="euro", size=16, color="gray"),
-                rx.text(
-                    precio,
-                    font_size="1em",
-                    color="gray",
-                    font_weight="medium",
+                rx.hstack(  # Agrupamos el precio
+                    rx.icon(tag="euro", size=20, color=Color.WHITE.value),
+                    rx.text(
+                        precio,
+                        font_size=Size.SMALL.value,
+                        color=Color.WHITE.value,
+                        font_weight="medium",
+                    ),
+                    spacing="1",
+                    align_items="center",
                 ),
-                justify="center",
-            ),
-            spacing="3",  # Cambiado de "0.3em" a un valor válido "3"
-            padding="10px",
-            height="100%",
-            justify="between",
+                # rx.spacer(),  # Elimina este rx.spacer()
+                rx.hstack(  # Agrupamos los iconos a la derecha
+                    rx.icon(tag="heart", size=20, color=Color.WHITE.value),
+                    rx.icon(
+                        tag="shopping-cart",
+                        size=20,
+                        color=Color.WHITE.value,
+                        margin_left="10px",
+                    ),
+                ),
+                justify="between",  # Precio a la izquierda, grupo de iconos a la derecha
+                align_items="center",
+                width="100%",
+                padding_x="10px",
+                padding_bottom="10px",
+            ),  # <-- ¡Aquí faltaba el paréntesis de cierre!
         )
     )

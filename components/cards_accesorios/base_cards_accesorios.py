@@ -1,4 +1,5 @@
 import reflex as rx
+from styles.styles import styles, Size, Color
 
 def base_card_accesorios(children: rx.Component, width: str, height: str) -> rx.Component:
     return rx.box(
@@ -18,7 +19,7 @@ def base_card_accesorios(children: rx.Component, width: str, height: str) -> rx.
         ),
         width=width,
         height=height,
-        background_color="white",
+        background_color=Color.FONDO_CARDS.value,
         border_radius="15px",
         box_shadow="lg",
         overflow="hidden",

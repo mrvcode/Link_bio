@@ -11,42 +11,42 @@ from styles.styles import styles, Color
 PRODUCTOS = [
     {
         "nombre": "Mochila Futura",
-        "precio": "59.99€",
+        "precio": "59.99",
         "imagen": "/mochila.jpg",
         "descripcion": "Una mochila hecha para destacar. Ideal para los soñadores.",
         "color_avatar": Color.VIOLET_LIGHT.value,
     },
     {
         "nombre": "Mochila Urbana",
-        "precio": "49.99€",
+        "precio": "49.99",
         "imagen": "/mochila.jpg",
         "descripcion": "Diseño moderno y adaptable para tu día a día.",
         "color_avatar": Color.BLUE_MEDIUM.value,
     },
     {
         "nombre": "Mochila Eco",
-        "precio": "39.99€",
+        "precio": "39.99",
         "imagen": "/mochila.jpg",
         "descripcion": "Hecha con materiales reciclados y mucho estilo.",
         "color_avatar": Color.GREEN_LIGHT.value,
     },
     {
         "nombre": "Mochila Futura",
-        "precio": "59.99€",
+        "precio": "59.99",
         "imagen": "/mochila.jpg",
         "descripcion": "Una mochila hecha para destacar. Ideal para los soñadores.",
         "color_avatar": Color.VIOLET_LIGHT.value,
     },
     {
         "nombre": "Mochila Urbana",
-        "precio": "49.99€",
+        "precio": "49.99",
         "imagen": "/mochila.jpg",
         "descripcion": "Diseño moderno y adaptable para tu día a día.",
         "color_avatar": Color.BLUE_MEDIUM.value,
     },
     {
         "nombre": "Mochila Eco",
-        "precio": "39.99€",
+        "precio": "39.99",
         "imagen": "/mochila.jpg",
         "descripcion": "Hecha con materiales reciclados y mucho estilo.",
         "color_avatar": Color.GREEN_LIGHT.value,
@@ -97,7 +97,7 @@ def originales(id=None) -> rx.Component:
                     for i, producto in enumerate(PRODUCTOS)
                 ],
                 columns="repeat(3, 1fr)",  # Cambiado de [1, 2, 3] a un valor válido
-                spacing="4",
+                spacing="8",
                 width="100%",
                 max_width=styles.MAX_WIDTH,
                 margin_y="2em",

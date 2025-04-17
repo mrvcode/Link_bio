@@ -1,6 +1,7 @@
 # components/cards_originales/base_cards.py
 
 import reflex as rx
+from styles.styles import styles, Size, Color
 
 
 def base_card(children: rx.Component) -> rx.Component:
@@ -9,22 +10,14 @@ def base_card(children: rx.Component) -> rx.Component:
             # Contenido dinámico que se le pasa (imagen, nombre, etc.)
             children,
             # Línea de iconos al pie
-            rx.hstack(
-                rx.icon(tag="heart", color="black", size=20),
-                rx.icon(tag="shopping-cart", color="black", size=20),
-                justify="between",
-                width="100%",
-                padding_x="10px",
-                padding_bottom="10px",
-            ),
             justify="between",
             height="100%",
         ),
-        width="220px",
-        height="300px",
-        background_color="white",
+        width="300px",
+        height="380px",
+        background_color=Color.FONDO_CARDS.value,
         border_radius="15px",
-        box_shadow="lg",
+        box_shadow="10px 20px 20px 5px rgba(0, 0, 0, 0.3)",
         overflow="hidden",
         position="relative",
     )
