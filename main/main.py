@@ -9,6 +9,7 @@ from pages.accesorios import accesorios
 from pages.extras import extras
 from styles.styles import styles
 from pages.page_card_accesorios import page_card_accesorios
+from pages.page_card_originales import page_card_originales
 
 
 # Metadatos para la página de inicio
@@ -125,8 +126,14 @@ app.add_page(lambda: layout(creacion()), route="/creacion", title="Creación")
 
 # app.add_page(lambda: layout(originales()), route="/originales", title="Originales")
 app.add_page(lambda: layout(extras()), route="/extras", title="Extras")
+
 app.add_page(
     lambda id=None: layout(originales(id)), route="/originales", title="Originales"
+)
+app.add_page(
+    lambda id=None: layout(page_card_originales(id)),
+    route="/originales/[id]",
+    title="Detalle Original",
 )
 app.add_page(lambda: layout(accesorios()), route="/accesorios", title="Accesorios")
 app.add_page(

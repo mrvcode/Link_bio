@@ -2,7 +2,7 @@
 
 
 import { Fragment } from "react"
-import { Box as RadixThemesBox, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
+import { Box as RadixThemesBox, Flex as RadixThemesFlex, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
 import NextLink from "next/link"
 import { Book as LucideBook, Home as LucideHome, Mail as LucideMail, ShoppingCart as LucideShoppingCart, User as LucideUser } from "lucide-react"
 import NextHead from "next/head"
@@ -95,28 +95,13 @@ export default function Component() {
 </RadixThemesFlex>
 <RadixThemesBox css={({ ["flex"] : "1", ["minHeight"] : "100vh" })}>
 
-<RadixThemesBox css={({ ["backgroundImage"] : "radial-gradient(circle at 20% 30%, #1fcdae 0%, transparent 40%), radial-gradient(circle at 70% 20%, #cf6fd0 0%, transparent 40%), radial-gradient(circle at 40% 80%, #0a97b4 0%, transparent 40%), linear-gradient(to bottom, #000000, #000000)", ["backgroundSize"] : "cover", ["backgroundRepeat"] : "no-repeat", ["backgroundAttachment"] : "fixed", ["backgroundPosition"] : "center", ["width"] : "100%", ["minHeight"] : "100vh" })}>
+<RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
 
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["padding"] : "3em", ["maxWidth"] : "1200px", ["margin"] : "0 auto" })} direction={"column"} gap={"5"}>
+<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["fontSize"] : "1.8em" })}>
 
-<RadixThemesHeading css={({ ["color"] : "#F1F1F1" })} size={"2"}>
-
-{"\u00c1rea de Creaci\u00f3n"}
-</RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["fontSize"] : "1.8em", ["textAlign"] : "center" })}>
-
-{"Aqu\u00ed podr\u00e1s personalizar tu mochila V3D"}
+{"Producto no encontrado"}
 </RadixThemesText>
-<RadixThemesFlex css={({ ["flex"] : 1, ["justifySelf"] : "stretch", ["alignSelf"] : "stretch", ["height"] : "2em" })}/>
-<RadixThemesBox css={({ ["padding"] : "2em", ["background"] : "rgba(0, 0, 0, 0.3)", ["borderRadius"] : "15px" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#cf6fd0", ["fontSize"] : "2.3em", ["fontWeight"] : "bold" })}>
-
-{"Pr\u00f3ximamente disponible..."}
-</RadixThemesText>
-</RadixThemesBox>
 </RadixThemesFlex>
-</RadixThemesBox>
 </RadixThemesBox>
 <RadixThemesBox css={({ ["width"] : "100%", ["paddingTop"] : "20px", ["paddingBottom"] : "20px", ["marginTop"] : "auto" })}>
 
@@ -141,7 +126,7 @@ export default function Component() {
 
 <title>
 
-{"Creaci\u00f3n"}
+{"Detalle Original"}
 </title>
 <meta content={"favicon.ico"} property={"og:image"}/>
 </NextHead>

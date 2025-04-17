@@ -105,7 +105,7 @@ export default function Component() {
 <RadixThemesFlex css={({ ["flex"] : 1, ["justifySelf"] : "stretch", ["alignSelf"] : "stretch", ["height"] : "px" })}/>
 <RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%" })}>
 
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%", ["maxWidth"] : "900px", ["marginInlineStart"] : "20px", ["marginInlineEnd"] : "20px", ["marginTop"] : "1.2em", ["marginBottom"] : "1.2em", ["borderRadius"] : "12px", ["padding"] : "20px", ["zIndex"] : "1" })} direction={"column"} gap={"3"}>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%", ["maxWidth"] : "1200px", ["marginInlineStart"] : "20px", ["marginInlineEnd"] : "20px", ["marginTop"] : "1.2em", ["marginBottom"] : "1.2em", ["borderRadius"] : "12px", ["padding"] : "20px", ["zIndex"] : "1" })} direction={"column"} gap={"3"}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 

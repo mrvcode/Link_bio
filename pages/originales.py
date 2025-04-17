@@ -12,42 +12,42 @@ PRODUCTOS = [
     {
         "nombre": "Mochila Futura",
         "precio": "59.99",
-        "imagen": "/mochila.jpg",
+        "imagen": "/image_mochilas_original/mochila.jpg",
         "descripcion": "Una mochila hecha para destacar. Ideal para los soñadores.",
         "color_avatar": Color.VIOLET_LIGHT.value,
     },
     {
         "nombre": "Mochila Urbana",
         "precio": "49.99",
-        "imagen": "/mochila.jpg",
+        "imagen": "/image_mochilas_original/mochila.jpg",
         "descripcion": "Diseño moderno y adaptable para tu día a día.",
         "color_avatar": Color.BLUE_MEDIUM.value,
     },
     {
         "nombre": "Mochila Eco",
         "precio": "39.99",
-        "imagen": "/mochila.jpg",
+        "imagen": "/image_mochilas_original/mochila.jpg",
         "descripcion": "Hecha con materiales reciclados y mucho estilo.",
         "color_avatar": Color.GREEN_LIGHT.value,
     },
     {
         "nombre": "Mochila Futura",
         "precio": "59.99",
-        "imagen": "/mochila.jpg",
+        "imagen": "/image_mochilas_original/mochila.jpg",
         "descripcion": "Una mochila hecha para destacar. Ideal para los soñadores.",
         "color_avatar": Color.VIOLET_LIGHT.value,
     },
     {
         "nombre": "Mochila Urbana",
         "precio": "49.99",
-        "imagen": "/mochila.jpg",
+        "imagen": "/image_mochilas_original/mochila.jpg",
         "descripcion": "Diseño moderno y adaptable para tu día a día.",
         "color_avatar": Color.BLUE_MEDIUM.value,
     },
     {
         "nombre": "Mochila Eco",
         "precio": "39.99",
-        "imagen": "/mochila.jpg",
+        "imagen": "/image_mochilas_original/mochila.jpg",
         "descripcion": "Hecha con materiales reciclados y mucho estilo.",
         "color_avatar": Color.GREEN_LIGHT.value,
     },
@@ -58,10 +58,10 @@ PRODUCTOS = [
 def originales(id=None) -> rx.Component:
     """
     Renderiza la página de productos originales.
-    
+
     Args:
         id: Parámetro opcional para compatibilidad, no se usa en esta función.
-        
+
     Returns:
         Un componente Reflex que muestra la grid de productos.
     """
@@ -79,7 +79,6 @@ def originales(id=None) -> rx.Component:
             right="2em",
             z_index="10",
         ),
-        
         # ✅ Grid de productos
         rx.center(
             rx.grid(
@@ -103,7 +102,6 @@ def originales(id=None) -> rx.Component:
                 margin_y="2em",
             )
         ),
-
         # ✅ Fondo y dimensiones del contenedor general
         background_image=styles.BACKGROUND_GRADIENT,
         background_size="cover",

@@ -97,7 +97,7 @@ export default function Component() {
 
 <RadixThemesBox css={({ ["backgroundImage"] : "radial-gradient(circle at 20% 30%, #1fcdae 0%, transparent 40%), radial-gradient(circle at 70% 20%, #cf6fd0 0%, transparent 40%), radial-gradient(circle at 40% 80%, #0a97b4 0%, transparent 40%), linear-gradient(to bottom, #000000, #000000)", ["backgroundSize"] : "cover", ["backgroundRepeat"] : "no-repeat", ["backgroundAttachment"] : "fixed", ["backgroundPosition"] : "center", ["width"] : "100%", ["minHeight"] : "100vh" })}>
 
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["padding"] : "3em", ["maxWidth"] : "900px", ["margin"] : "0 auto" })} direction={"column"} gap={"5"}>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["padding"] : "3em", ["maxWidth"] : "1200px", ["margin"] : "0 auto" })} direction={"column"} gap={"5"}>
 
 <RadixThemesHeading css={({ ["color"] : "#F1F1F1" })} size={"2"}>
 

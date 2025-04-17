@@ -22,7 +22,7 @@ class Size(Enum):
 
 
 class StyleConstants(Enum):
-    MAX_WIDTH = "900px"
+    MAX_WIDTH = "1200px"
 
 
 class styles:

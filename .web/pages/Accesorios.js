@@ -127,7 +127,7 @@ export default function Component() {
 {"Pencils near you"}
 </RadixThemesText>
 </RadixThemesFlex>
-<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/imagen_accesorios/accesorio.jpg"}/>
+<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/image_accesorios/accesorio.jpg"}/>
 </RadixThemesFlex>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
 
@@ -160,7 +160,7 @@ export default function Component() {
 {"Drink wherever"}
 </RadixThemesText>
 </RadixThemesFlex>
-<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/imagen_accesorios/accesorio.jpg"}/>
+<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/image_accesorios/accesorio.jpg"}/>
 </RadixThemesFlex>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
 
@@ -193,7 +193,106 @@ export default function Component() {
 {"Protect yourself"}
 </RadixThemesText>
 </RadixThemesFlex>
-<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/imagen_accesorios/accesorio.jpg"}/>
+<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/image_accesorios/accesorio.jpg"}/>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "black" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
+<LucideSend css={({ ["color"] : "black" })} size={20}/>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/accesorios/4"} passHref={true}>
+
+<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "150px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["height"] : "100%" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "flex-start" })} direction={"column"} gap={"1"}>
+
+<RadixThemesText as={"p"} css={({ ["fontWeight"] : "bold", ["fontSize"] : "1.2em" })}>
+
+{"Pencil Case"}
+</RadixThemesText>
+<RadixThemesText as={"p"}>
+
+{"Pencils near you"}
+</RadixThemesText>
+</RadixThemesFlex>
+<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/image_accesorios/accesorio.jpg"}/>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "black" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
+<LucideSend css={({ ["color"] : "black" })} size={20}/>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/accesorios/5"} passHref={true}>
+
+<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "150px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["height"] : "100%" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "flex-start" })} direction={"column"} gap={"1"}>
+
+<RadixThemesText as={"p"} css={({ ["fontWeight"] : "bold", ["fontSize"] : "1.2em" })}>
+
+{"Water Bag 3L"}
+</RadixThemesText>
+<RadixThemesText as={"p"}>
+
+{"Drink wherever"}
+</RadixThemesText>
+</RadixThemesFlex>
+<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/image_accesorios/accesorio.jpg"}/>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "black" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
+<LucideSend css={({ ["color"] : "black" })} size={20}/>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/accesorios/6"} passHref={true}>
+
+<RadixThemesBox css={({ ["width"] : "300px", ["height"] : "300px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["height"] : "100%" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "flex-start" })} direction={"column"} gap={"1"}>
+
+<RadixThemesText as={"p"} css={({ ["fontWeight"] : "bold", ["fontSize"] : "1.2em" })}>
+
+{"Rain Cover"}
+</RadixThemesText>
+<RadixThemesText as={"p"}>
+
+{"Protect yourself"}
+</RadixThemesText>
+</RadixThemesFlex>
+<img css={({ ["width"] : "40%", ["height"] : "100%", ["objectFit"] : "cover" })} src={"/image_accesorios/accesorio.jpg"}/>
 </RadixThemesFlex>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
 

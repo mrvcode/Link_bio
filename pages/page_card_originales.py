@@ -1,11 +1,15 @@
 # pages/page_card_originales.py
 import reflex as rx
 from styles.styles import styles, Color, Size
-from pages.originales import PRODUCTOS  # Lista de productos simulada
+from pages.originales import PRODUCTOS
 
 
-def page_card_originales(id: int) -> rx.Component:
-    producto = PRODUCTOS[id] if 0 <= id < len(PRODUCTOS) else None
+def page_card_originales(id: str) -> rx.Component:
+    try:
+        id_int = int(id)
+        producto = PRODUCTOS[id_int] if 0 <= id_int < len(PRODUCTOS) else None
+    except (ValueError, TypeError):
+        producto = None
 
     if not producto:
         return rx.center(
@@ -13,10 +17,10 @@ def page_card_originales(id: int) -> rx.Component:
         )
 
     return rx.box(
-        # ✅ Título fijo superior derecho: "Ficha mochila"
+        # Título superior derecho
         rx.box(
             rx.text(
-                "Ficha mochila",  # Nombre de la sección/página
+                "Ficha mochila",
                 font_size=Size.DEFAULT.value,
                 color=Color.WHITE.value,
                 font_weight="bold",
@@ -26,8 +30,7 @@ def page_card_originales(id: int) -> rx.Component:
             right="2em",
             z_index="10",
         ),
-
-        # Título centrado con el nombre del producto
+        # Nombre del producto
         rx.box(
             rx.heading(
                 producto["nombre"],
@@ -38,10 +41,8 @@ def page_card_originales(id: int) -> rx.Component:
             padding="2em 0",
             width="100%",
         ),
-
         # Contenido principal
         rx.hstack(
-            # Descripciones (simuladas)
             rx.vstack(
                 *[
                     rx.box(
@@ -65,30 +66,25 @@ def page_card_originales(id: int) -> rx.Component:
                 spacing="2",
                 width="60%",
             ),
-            # Imagen
             rx.box(
                 rx.image(
                     src=producto["imagen"],
                     width="300px",
                     height="auto",
                     border_radius="10px",
-                    
                 ),
                 margin_left="2em",
             ),
             width="100%",
             padding_x="2em",
         ),
-
-        # Precio
         rx.text(
-            f"Precio: {producto['precio']}",
+            f"Precio: {producto['precio']} €",
             font_size=Size.DEFAULT.value,
             color=Color.WHITE.value,
             text_align="center",
             padding="2em",
         ),
-
         background_image=styles.BACKGROUND_GRADIENT,
         background_size="cover",
         background_repeat="no-repeat",
@@ -96,5 +92,5 @@ def page_card_originales(id: int) -> rx.Component:
         width="100%",
         min_height="100vh",
         padding="2em",
-        position="relative",  # Necesario para que el texto arriba a la derecha sea relativo
+        position="relative",
     )
