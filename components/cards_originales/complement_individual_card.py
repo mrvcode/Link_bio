@@ -46,7 +46,7 @@ def complement_individual_card(
                     text_align="center",
                     flex="1",
                 ),
-                spacing="1em",
+                spacing="4",  # Cambiado de "1em" a un valor válido "4"
                 align="center",
                 width="100%",
                 justify="center"
@@ -62,9 +62,9 @@ def complement_individual_card(
                 ),
                 justify="center",
             ),
-            spacing="0.3em",
+            spacing="3",  # Cambiado de "0.3em" a un valor válido "3"
             padding="10px",
             height="100%",
-            justify="space-between",
+            justify="between",
         )
     )

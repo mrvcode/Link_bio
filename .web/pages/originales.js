@@ -2,9 +2,9 @@
 
 
 import { Fragment } from "react"
-import { Box as RadixThemesBox, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
+import { Box as RadixThemesBox, Flex as RadixThemesFlex, Grid as RadixThemesGrid, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
 import NextLink from "next/link"
-import { Book as LucideBook, Home as LucideHome, Mail as LucideMail, ShoppingCart as LucideShoppingCart, User as LucideUser } from "lucide-react"
+import { Book as LucideBook, Euro as LucideEuro, Heart as LucideHeart, Home as LucideHome, Mail as LucideMail, ShoppingCart as LucideShoppingCart, User as LucideUser } from "lucide-react"
 import NextHead from "next/head"
 
 
@@ -95,249 +95,279 @@ export default function Component() {
 </RadixThemesFlex>
 <RadixThemesBox css={({ ["flex"] : "1", ["minHeight"] : "100vh" })}>
 
-<RadixThemesBox css={({ ["backgroundImage"] : "radial-gradient(circle at 20% 30%, #1fcdae 0%, transparent 40%), radial-gradient(circle at 70% 20%, #cf6fd0 0%, transparent 40%), radial-gradient(circle at 40% 80%, #0a97b4 0%, transparent 40%), linear-gradient(to bottom, #000000, #000000)", ["backgroundSize"] : "cover", ["backgroundRepeat"] : "no-repeat", ["backgroundAttachment"] : "fixed", ["backgroundPosition"] : "center", ["width"] : "100%", ["minHeight"] : "100vh" })}>
+<RadixThemesBox css={({ ["backgroundImage"] : "radial-gradient(circle at 20% 30%, #1fcdae 0%, transparent 40%), radial-gradient(circle at 70% 20%, #cf6fd0 0%, transparent 40%), radial-gradient(circle at 40% 80%, #0a97b4 0%, transparent 40%), linear-gradient(to bottom, #000000, #000000)", ["backgroundSize"] : "cover", ["backgroundRepeat"] : "no-repeat", ["backgroundPosition"] : "center", ["width"] : "100%", ["minHeight"] : "100vh", ["padding"] : "2em", ["position"] : "relative" })}>
 
-<RadixThemesBox css={({ ["padding"] : "1em 2em", ["width"] : "100%" })}>
+<RadixThemesBox css={({ ["position"] : "absolute", ["top"] : "1em", ["right"] : "2em", ["zIndex"] : "10" })}>
 
-<RadixThemesHeading css={({ ["fontSize"] : "2.3em", ["color"] : "#F1F1F1", ["textAlign"] : "right" })}>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.5em", ["color"] : "#F1F1F1", ["fontWeight"] : "bold" })}>
 
-{"Mochilas Originales"}
-</RadixThemesHeading>
-</RadixThemesBox>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "stretch", ["width"] : "100%", ["flexWrap"] : "wrap", ["height"] : "80vh" })} direction={"row"} gap={"3"}>
-
-<RadixThemesBox>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "flex-start", ["padding"] : "5em", ["height"] : "100%" })} direction={"column"} gap={"0"}>
-
-<RadixThemesBox css={({ ["@media screen and (min-width: 0)"] : ({ ["width"] : "100%" }), ["@media screen and (min-width: 30em)"] : ({ ["width"] : "100%" }), ["borderRadius"] : "10px", ["margin"] : "2em 2em 2em 2em", ["height"] : "100%" })}>
-
-<RadixThemesHeading css={({ ["fontSize"] : "1.8em", ["color"] : "#F1F1F1" })}>
-
-{"t\u00edtulo descriptivo accesorio"}
-</RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["fontSize"] : "1.2em", ["whiteSpace"] : "pre-line" })}>
-
-{"descripcion del accesorio\n                            tama\u00f1o, forma, material."}
-</RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["color"] : "#cf6fd0", ["whiteSpace"] : "pre-line" })}>
-
-{"##############################\n                            ##############################\n                            ##############################"}
+{"Originales"}
 </RadixThemesText>
 </RadixThemesBox>
-<RadixThemesFlex css={({ ["flex"] : 1, ["justifySelf"] : "stretch", ["alignSelf"] : "stretch", ["height"] : "2.5em" })}/>
-<RadixThemesBox css={({ ["@media screen and (min-width: 0)"] : ({ ["width"] : "100%" }), ["@media screen and (min-width: 30em)"] : ({ ["width"] : "100%" }), ["borderRadius"] : "10px", ["margin"] : "2em 2em 2em 10em", ["height"] : "100%" })}>
+<RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
 
-<RadixThemesHeading css={({ ["fontSize"] : "1.8em", ["color"] : "#F1F1F1" })}>
+<RadixThemesGrid columns={"repeat(3, 1fr)"} css={({ ["width"] : "100%", ["maxWidth"] : "900px", ["marginTop"] : "2em", ["marginBottom"] : "2em" })} gap={"4"}>
 
-{"t\u00edtulo descriptivo accesorio"}
-</RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["fontSize"] : "1.2em", ["whiteSpace"] : "pre-line" })}>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
 
-{"descripcion del accesorio\n                            tama\u00f1o, forma, material."}
-</RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["color"] : "#cf6fd0", ["whiteSpace"] : "pre-line" })}>
+<NextLink href={"/originales/0"} passHref={true}>
 
-{"##############################\n                            ##############################\n                            ##############################"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesFlex css={({ ["flex"] : 1, ["justifySelf"] : "stretch", ["alignSelf"] : "stretch", ["height"] : "2.5em" })}/>
-<RadixThemesBox css={({ ["@media screen and (min-width: 0)"] : ({ ["width"] : "100%" }), ["@media screen and (min-width: 30em)"] : ({ ["width"] : "100%" }), ["borderRadius"] : "10px", ["margin"] : "2em 2em 2em 2em", ["height"] : "100%" })}>
+<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "300px", ["backgroundColor"] : "white", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
 
-<RadixThemesHeading css={({ ["fontSize"] : "1.8em", ["color"] : "#F1F1F1" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
 
-{"t\u00edtulo descriptivo accesorio"}
-</RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["fontSize"] : "1.2em", ["whiteSpace"] : "pre-line" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["padding"] : "10px", ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
 
-{"descripcion del accesorio\n                            tama\u00f1o, forma, material."}
-</RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["color"] : "#cf6fd0", ["whiteSpace"] : "pre-line" })}>
+<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/mochila.jpg"}/>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"center"} gap={"4"}>
 
-{"##############################\n                            ##############################\n                            ##############################"}
+<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #cf6fd0" })}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#cf6fd0", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
+
+{"V3D"}
 </RadixThemesText>
 </RadixThemesBox>
-<RadixThemesFlex css={({ ["flex"] : 1, ["justifySelf"] : "stretch", ["alignSelf"] : "stretch" })}/>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.1em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1" })}>
+
+{"Mochila Futura"}
+</RadixThemesText>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} justify={"center"} gap={"3"}>
+
+<LucideEuro css={({ ["color"] : "gray" })} size={16}/>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1em", ["color"] : "gray", ["fontWeight"] : "medium" })}>
+
+{"59.99\u20ac"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "black" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
+</RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesBox>
-<RadixThemesBox css={({ ["@media screen and (min-width: 0)"] : ({ ["width"] : "100%" }), ["@media screen and (min-width: 30em)"] : ({ ["width"] : "60%" }), ["padding"] : "1em", ["margin"] : "1em", ["display"] : "flex", ["flexDirection"] : "column", ["alignItems"] : "center", ["height"] : "100%" })}>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
 
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["fontSize"] : "2em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["marginBottom"] : "0.5em" })}>
+<NextLink href={"/originales/1"} passHref={true}>
 
-{"texto nombre de la mochila"}
-</RadixThemesText>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "8em 4em", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center", ["width"] : "100%", ["height"] : "70%" })}>
+<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "300px", ["backgroundColor"] : "white", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
 
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["fontStyle"] : "italic", ["fontSize"] : "1.5em", ["whiteSpace"] : "pre-line" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
 
-{"en este recuadro\nira la foto de la\nmochila"}
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["padding"] : "10px", ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/mochila.jpg"}/>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"center"} gap={"4"}>
+
+<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #0a97b4" })}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#0a97b4", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
+
+{"V3D"}
 </RadixThemesText>
 </RadixThemesBox>
-</RadixThemesBox>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.1em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1" })}>
+
+{"Mochila Urbana"}
+</RadixThemesText>
 </RadixThemesFlex>
-<RadixThemesBox css={({ ["margin"] : "1em", ["padding"] : "1em", ["width"] : "100%" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} justify={"center"} gap={"3"}>
 
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["justifyContent"] : "space-between", ["alignItems"] : "center", ["padding"] : "0 2em" })} direction={"row"} gap={"3"}>
+<LucideEuro css={({ ["color"] : "gray" })} size={16}/>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1em", ["color"] : "gray", ["fontWeight"] : "medium" })}>
 
-<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "50%", ["width"] : "40px", ["height"] : "40px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center", ["cursor"] : "pointer" })}>
-
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "2em", ["color"] : "#cf6fd0" })}>
-
-{"\u276e"}
+{"49.99\u20ac"}
 </RadixThemesText>
-</RadixThemesBox>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["overflowX"] : "auto" })} direction={"row"} gap={"1"}>
-
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesBox css={({ ["background"] : "rgba(128, 128, 128, 0.5)", ["borderRadius"] : "10px", ["padding"] : "2em 1em", ["margin"] : "0 0.5em", ["width"] : "150px", ["height"] : "130px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center" })}>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["textAlign"] : "center", ["whiteSpace"] : "pre-line", ["fontSize"] : "0.8em" })}>
-
-{"fotos caracter\u00edsticas\nde la mochila como\ndiferentes puntos de\nvista de ella"}
-</RadixThemesText>
-</RadixThemesBox>
 </RadixThemesFlex>
-<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "50%", ["width"] : "40px", ["height"] : "40px", ["display"] : "flex", ["justifyContent"] : "center", ["alignItems"] : "center", ["cursor"] : "pointer" })}>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
 
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "2em", ["color"] : "#cf6fd0" })}>
-
-{"\u276f"}
-</RadixThemesText>
-</RadixThemesBox>
+<LucideHeart css={({ ["color"] : "black" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
+</RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesBox>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/originales/2"} passHref={true}>
+
+<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "300px", ["backgroundColor"] : "white", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["padding"] : "10px", ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/mochila.jpg"}/>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"center"} gap={"4"}>
+
+<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #0f828e" })}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#0f828e", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
+
+{"V3D"}
+</RadixThemesText>
+</RadixThemesBox>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.1em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1" })}>
+
+{"Mochila Eco"}
+</RadixThemesText>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} justify={"center"} gap={"3"}>
+
+<LucideEuro css={({ ["color"] : "gray" })} size={16}/>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1em", ["color"] : "gray", ["fontWeight"] : "medium" })}>
+
+{"39.99\u20ac"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "black" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/originales/3"} passHref={true}>
+
+<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "300px", ["backgroundColor"] : "white", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["padding"] : "10px", ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/mochila.jpg"}/>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"center"} gap={"4"}>
+
+<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #cf6fd0" })}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#cf6fd0", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
+
+{"V3D"}
+</RadixThemesText>
+</RadixThemesBox>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.1em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1" })}>
+
+{"Mochila Futura"}
+</RadixThemesText>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} justify={"center"} gap={"3"}>
+
+<LucideEuro css={({ ["color"] : "gray" })} size={16}/>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1em", ["color"] : "gray", ["fontWeight"] : "medium" })}>
+
+{"59.99\u20ac"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "black" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/originales/4"} passHref={true}>
+
+<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "300px", ["backgroundColor"] : "white", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["padding"] : "10px", ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/mochila.jpg"}/>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"center"} gap={"4"}>
+
+<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #0a97b4" })}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#0a97b4", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
+
+{"V3D"}
+</RadixThemesText>
+</RadixThemesBox>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.1em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1" })}>
+
+{"Mochila Urbana"}
+</RadixThemesText>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} justify={"center"} gap={"3"}>
+
+<LucideEuro css={({ ["color"] : "gray" })} size={16}/>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1em", ["color"] : "gray", ["fontWeight"] : "medium" })}>
+
+{"49.99\u20ac"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "black" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/originales/5"} passHref={true}>
+
+<RadixThemesBox css={({ ["width"] : "220px", ["height"] : "300px", ["backgroundColor"] : "white", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["overflow"] : "hidden", ["position"] : "relative" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["padding"] : "10px", ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/mochila.jpg"}/>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"center"} gap={"4"}>
+
+<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #0f828e" })}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#0f828e", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
+
+{"V3D"}
+</RadixThemesText>
+</RadixThemesBox>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.1em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1" })}>
+
+{"Mochila Eco"}
+</RadixThemesText>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} justify={"center"} gap={"3"}>
+
+<LucideEuro css={({ ["color"] : "gray" })} size={16}/>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1em", ["color"] : "gray", ["fontWeight"] : "medium" })}>
+
+{"39.99\u20ac"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "black" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "black" })} size={20}/>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+</NextLink>
+</RadixThemesLink>
+</RadixThemesGrid>
+</RadixThemesFlex>
 </RadixThemesBox>
 </RadixThemesBox>
 <RadixThemesBox css={({ ["width"] : "100%", ["paddingTop"] : "20px", ["paddingBottom"] : "20px", ["marginTop"] : "auto" })}>

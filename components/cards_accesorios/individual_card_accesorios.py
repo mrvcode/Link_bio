@@ -15,7 +15,7 @@ def individual_card_accesorios(
                 rx.text(nombre, font_weight="bold", font_size="1.2em"),
                 rx.text(descripcion),
                 align_items="flex-start",
-                spacing="0.5em",
+                spacing="1",  # Cambiado de "0.5em" a "1"
             ),
             rx.image(  # Imagen a la derecha
                 src=imagen,
@@ -25,7 +25,7 @@ def individual_card_accesorios(
             ),
             width="100%",
             height="100%",
-            justify="space-between",
+            justify="between",  # Cambiado de "space-between" a "between"
         ),
         width=width,
         height=height,

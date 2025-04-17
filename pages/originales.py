@@ -55,7 +55,16 @@ PRODUCTOS = [
 ]
 
 
-def originales() -> rx.Component:
+def originales(id=None) -> rx.Component:
+    """
+    Renderiza la página de productos originales.
+    
+    Args:
+        id: Parámetro opcional para compatibilidad, no se usa en esta función.
+        
+    Returns:
+        Un componente Reflex que muestra la grid de productos.
+    """
     return rx.box(  # cambiamos de rx.center a rx.box para poder usar position="relative"
         # ✅ Título superior derecho
         rx.box(
@@ -87,7 +96,7 @@ def originales() -> rx.Component:
                     )
                     for i, producto in enumerate(PRODUCTOS)
                 ],
-                columns=[1, 2, 3],
+                columns="repeat(3, 1fr)",  # Cambiado de [1, 2, 3] a un valor válido
                 spacing="4",
                 width="100%",
                 max_width=styles.MAX_WIDTH,

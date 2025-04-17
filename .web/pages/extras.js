@@ -105,7 +105,7 @@ export default function Component() {
 </RadixThemesHeading>
 <RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["fontSize"] : "1.8em", ["textAlign"] : "center" })}>
 
-{"Aqu\u00ed podr\u00e1s personalizar tu mochila V3D"}
+{"Aqu\u00ed podr\u00e1s personalizar tu mochila V3D\n                Fondos de pantalla 3D de tu mochila personalizada\n                Manual de cuidados\n                Stickers digitales para redes\n                Tutoriales de c\u00f3mo montar/desmontar"}
 </RadixThemesText>
 <RadixThemesFlex css={({ ["flex"] : 1, ["justifySelf"] : "stretch", ["alignSelf"] : "stretch", ["height"] : "2em" })}/>
 <RadixThemesBox css={({ ["padding"] : "2em", ["background"] : "rgba(0, 0, 0, 0.3)", ["borderRadius"] : "15px" })}>

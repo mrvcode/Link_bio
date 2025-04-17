@@ -125,8 +125,5 @@ app.add_page(lambda: layout(creacion()), route="/creacion", title="Creación")
 app.add_page(lambda: layout(accesorios()), route="/accesorios", title="Accesorios")
 app.add_page(lambda: layout(originales()), route="/originales", title="Originales")
 app.add_page(lambda: layout(extras()), route="/extras", title="Extras")
-app.add_page(
-    lambda id: layout(page_card_originales(id)),
-    route="/originales/[id]",
-    title="Detalle Producto",
-)
+app.add_page(lambda id=None: layout(originales(id)), route="/originales", title="Originales")
+
