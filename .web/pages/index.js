@@ -256,7 +256,7 @@ export default function Component() {
 <meta content={"website"} name={"og:type"}/>
 <meta content={"Mochilas V3D | Dise\u00f1o Innovador y Personalizado"} name={"og:title"}/>
 <meta content={"Descubre la colecci\u00f3n de mochilas 3D \u00fanicas y personalizables. Expresa tu estilo con dise\u00f1os vibrantes y funcionales."} name={"og:description"}/>
-<meta content={"/assets/mochilas_3d_preview.jpg"} name={"og:image"}/>
+<meta content={"/mochilas_3d_preview.jpg"} name={"og:image"}/>
 </NextHead>
 </Fragment>
   )

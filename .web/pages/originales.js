@@ -1,13 +1,186 @@
 /** @jsxImportSource @emotion/react */
 
 
-import { Fragment } from "react"
+import { Fragment, useCallback, useContext } from "react"
 import { Box as RadixThemesBox, Flex as RadixThemesFlex, Grid as RadixThemesGrid, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
 import NextLink from "next/link"
 import { Book as LucideBook, Euro as LucideEuro, Heart as LucideHeart, Home as LucideHome, Mail as LucideMail, ShoppingCart as LucideShoppingCart, User as LucideUser } from "lucide-react"
+import { EventLoopContext } from "$/utils/context"
+import { Event } from "$/utils/state"
 import NextHead from "next/head"
 
 
+
+export function Link_0f33c0637fe89f4766761301a1156075 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_7be6ca6af67c714540a0355ba1009991 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/detalle_originales/1", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesLink css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} href={"#"} onClick={on_click_7be6ca6af67c714540a0355ba1009991}>
+
+<RadixThemesBox css={({ ["width"] : "380px", ["height"] : "400px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "10px 20px 20px 5px rgba(0, 0, 0, 0.3)", ["overflow"] : "hidden", ["position"] : "relative" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"between"} gap={"4"}>
+
+<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #0a97b4" })}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#0a97b4", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
+
+{"V3D"}
+</RadixThemesText>
+</RadixThemesBox>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1", ["margin"] : "0 0 0 10px " })}>
+
+{"Mochila Urbana"}
+</RadixThemesText>
+</RadixThemesFlex>
+<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/image_mochilas_original/mochila.jpg"}/>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"1"}>
+
+<LucideEuro css={({ ["color"] : "#F1F1F1" })} size={20}/>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#F1F1F1", ["fontWeight"] : "medium" })}>
+
+{"49.99"}
+</RadixThemesText>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "#F1F1F1" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "#F1F1F1", ["marginLeft"] : "10px" })} size={20}/>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+</RadixThemesLink>
+  )
+}
+
+export function Link_e9530af61a8adf0c3304c6dd6f9fd62b () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_483a69259f99491deb3c374a0ed464e2 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/detalle_originales/0", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesLink css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} href={"#"} onClick={on_click_483a69259f99491deb3c374a0ed464e2}>
+
+<RadixThemesBox css={({ ["width"] : "380px", ["height"] : "400px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "10px 20px 20px 5px rgba(0, 0, 0, 0.3)", ["overflow"] : "hidden", ["position"] : "relative" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"between"} gap={"4"}>
+
+<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #cf6fd0" })}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#cf6fd0", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
+
+{"V3D"}
+</RadixThemesText>
+</RadixThemesBox>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1", ["margin"] : "0 0 0 10px " })}>
+
+{"Mochila Futura"}
+</RadixThemesText>
+</RadixThemesFlex>
+<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/image_mochilas_original/mochila.jpg"}/>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"1"}>
+
+<LucideEuro css={({ ["color"] : "#F1F1F1" })} size={20}/>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#F1F1F1", ["fontWeight"] : "medium" })}>
+
+{"59.99"}
+</RadixThemesText>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "#F1F1F1" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "#F1F1F1", ["marginLeft"] : "10px" })} size={20}/>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+</RadixThemesLink>
+  )
+}
+
+export function Link_240baa00a35d63b960a5d860a8620a09 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_8ae7104b7483d0e387ddd43a43cecd5d = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/detalle_originales/2", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesLink css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} href={"#"} onClick={on_click_8ae7104b7483d0e387ddd43a43cecd5d}>
+
+<RadixThemesBox css={({ ["width"] : "380px", ["height"] : "400px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "10px 20px 20px 5px rgba(0, 0, 0, 0.3)", ["overflow"] : "hidden", ["position"] : "relative" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"between"} gap={"4"}>
+
+<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #0f828e" })}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#0f828e", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
+
+{"V3D"}
+</RadixThemesText>
+</RadixThemesBox>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1", ["margin"] : "0 0 0 10px " })}>
+
+{"Mochila Eco"}
+</RadixThemesText>
+</RadixThemesFlex>
+<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/image_mochilas_original/mochila.jpg"}/>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"1"}>
+
+<LucideEuro css={({ ["color"] : "#F1F1F1" })} size={20}/>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#F1F1F1", ["fontWeight"] : "medium" })}>
+
+{"39.99"}
+</RadixThemesText>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
+
+<LucideHeart css={({ ["color"] : "#F1F1F1" })} size={20}/>
+<LucideShoppingCart css={({ ["color"] : "#F1F1F1", ["marginLeft"] : "10px" })} size={20}/>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+</RadixThemesLink>
+  )
+}
 
 export default function Component() {
     
@@ -108,282 +281,9 @@ export default function Component() {
 
 <RadixThemesGrid columns={"repeat(3, 1fr)"} css={({ ["width"] : "100%", ["maxWidth"] : "1200px", ["marginTop"] : "2em", ["marginBottom"] : "2em" })} gap={"8"}>
 
-<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
-
-<NextLink href={"/originales/0"} passHref={true}>
-
-<RadixThemesBox css={({ ["width"] : "380px", ["height"] : "400px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "10px 20px 20px 5px rgba(0, 0, 0, 0.3)", ["overflow"] : "hidden", ["position"] : "relative" })}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
-
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"between"} gap={"4"}>
-
-<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #cf6fd0" })}>
-
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#cf6fd0", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
-
-{"V3D"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1", ["margin"] : "0 0 0 10px " })}>
-
-{"Mochila Futura"}
-</RadixThemesText>
-</RadixThemesFlex>
-<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/image_mochilas_original/mochila.jpg"}/>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"1"}>
-
-<LucideEuro css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#F1F1F1", ["fontWeight"] : "medium" })}>
-
-{"59.99"}
-</RadixThemesText>
-</RadixThemesFlex>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
-
-<LucideHeart css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<LucideShoppingCart css={({ ["color"] : "#F1F1F1", ["marginLeft"] : "10px" })} size={20}/>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesBox>
-</NextLink>
-</RadixThemesLink>
-<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
-
-<NextLink href={"/originales/1"} passHref={true}>
-
-<RadixThemesBox css={({ ["width"] : "380px", ["height"] : "400px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "10px 20px 20px 5px rgba(0, 0, 0, 0.3)", ["overflow"] : "hidden", ["position"] : "relative" })}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
-
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"between"} gap={"4"}>
-
-<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #0a97b4" })}>
-
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#0a97b4", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
-
-{"V3D"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1", ["margin"] : "0 0 0 10px " })}>
-
-{"Mochila Urbana"}
-</RadixThemesText>
-</RadixThemesFlex>
-<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/image_mochilas_original/mochila.jpg"}/>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"1"}>
-
-<LucideEuro css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#F1F1F1", ["fontWeight"] : "medium" })}>
-
-{"49.99"}
-</RadixThemesText>
-</RadixThemesFlex>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
-
-<LucideHeart css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<LucideShoppingCart css={({ ["color"] : "#F1F1F1", ["marginLeft"] : "10px" })} size={20}/>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesBox>
-</NextLink>
-</RadixThemesLink>
-<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
-
-<NextLink href={"/originales/2"} passHref={true}>
-
-<RadixThemesBox css={({ ["width"] : "380px", ["height"] : "400px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "10px 20px 20px 5px rgba(0, 0, 0, 0.3)", ["overflow"] : "hidden", ["position"] : "relative" })}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
-
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"between"} gap={"4"}>
-
-<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #0f828e" })}>
-
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#0f828e", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
-
-{"V3D"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1", ["margin"] : "0 0 0 10px " })}>
-
-{"Mochila Eco"}
-</RadixThemesText>
-</RadixThemesFlex>
-<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/image_mochilas_original/mochila.jpg"}/>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"1"}>
-
-<LucideEuro css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#F1F1F1", ["fontWeight"] : "medium" })}>
-
-{"39.99"}
-</RadixThemesText>
-</RadixThemesFlex>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
-
-<LucideHeart css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<LucideShoppingCart css={({ ["color"] : "#F1F1F1", ["marginLeft"] : "10px" })} size={20}/>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesBox>
-</NextLink>
-</RadixThemesLink>
-<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
-
-<NextLink href={"/originales/3"} passHref={true}>
-
-<RadixThemesBox css={({ ["width"] : "380px", ["height"] : "400px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "10px 20px 20px 5px rgba(0, 0, 0, 0.3)", ["overflow"] : "hidden", ["position"] : "relative" })}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
-
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"between"} gap={"4"}>
-
-<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #cf6fd0" })}>
-
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#cf6fd0", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
-
-{"V3D"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1", ["margin"] : "0 0 0 10px " })}>
-
-{"Mochila Futura"}
-</RadixThemesText>
-</RadixThemesFlex>
-<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/image_mochilas_original/mochila.jpg"}/>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"1"}>
-
-<LucideEuro css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#F1F1F1", ["fontWeight"] : "medium" })}>
-
-{"59.99"}
-</RadixThemesText>
-</RadixThemesFlex>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
-
-<LucideHeart css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<LucideShoppingCart css={({ ["color"] : "#F1F1F1", ["marginLeft"] : "10px" })} size={20}/>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesBox>
-</NextLink>
-</RadixThemesLink>
-<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
-
-<NextLink href={"/originales/4"} passHref={true}>
-
-<RadixThemesBox css={({ ["width"] : "380px", ["height"] : "400px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "10px 20px 20px 5px rgba(0, 0, 0, 0.3)", ["overflow"] : "hidden", ["position"] : "relative" })}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
-
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"between"} gap={"4"}>
-
-<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #0a97b4" })}>
-
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#0a97b4", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
-
-{"V3D"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1", ["margin"] : "0 0 0 10px " })}>
-
-{"Mochila Urbana"}
-</RadixThemesText>
-</RadixThemesFlex>
-<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/image_mochilas_original/mochila.jpg"}/>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"1"}>
-
-<LucideEuro css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#F1F1F1", ["fontWeight"] : "medium" })}>
-
-{"49.99"}
-</RadixThemesText>
-</RadixThemesFlex>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
-
-<LucideHeart css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<LucideShoppingCart css={({ ["color"] : "#F1F1F1", ["marginLeft"] : "10px" })} size={20}/>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesBox>
-</NextLink>
-</RadixThemesLink>
-<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
-
-<NextLink href={"/originales/5"} passHref={true}>
-
-<RadixThemesBox css={({ ["width"] : "380px", ["height"] : "400px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["borderRadius"] : "15px", ["boxShadow"] : "10px 20px 20px 5px rgba(0, 0, 0, 0.3)", ["overflow"] : "hidden", ["position"] : "relative" })}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["height"] : "100%" })} direction={"column"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
-
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"row"} justify={"between"} gap={"4"}>
-
-<RadixThemesBox css={({ ["background"] : "rgba(0, 0, 0, 0.2)", ["borderRadius"] : "10px", ["padding"] : "10px", ["width"] : "50px", ["height"] : "50px", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["border"] : "2px solid #0f828e" })}>
-
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#0f828e", ["fontWeight"] : "bold", ["filter"] : "brightness(1.3)" })}>
-
-{"V3D"}
-</RadixThemesText>
-</RadixThemesBox>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["fontWeight"] : "bold", ["textAlign"] : "center", ["flex"] : "1", ["margin"] : "0 0 0 10px " })}>
-
-{"Mochila Eco"}
-</RadixThemesText>
-</RadixThemesFlex>
-<img css={({ ["width"] : "100%", ["height"] : "200px", ["objectFit"] : "cover", ["borderTopRadius"] : "15px" })} src={"/image_mochilas_original/mochila.jpg"}/>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["paddingInlineStart"] : "10px", ["paddingInlineEnd"] : "10px", ["paddingBottom"] : "10px" })} direction={"row"} justify={"between"} gap={"3"}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"1"}>
-
-<LucideEuro css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.2em", ["color"] : "#F1F1F1", ["fontWeight"] : "medium" })}>
-
-{"39.99"}
-</RadixThemesText>
-</RadixThemesFlex>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
-
-<LucideHeart css={({ ["color"] : "#F1F1F1" })} size={20}/>
-<LucideShoppingCart css={({ ["color"] : "#F1F1F1", ["marginLeft"] : "10px" })} size={20}/>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesBox>
-</NextLink>
-</RadixThemesLink>
+<Link_e9530af61a8adf0c3304c6dd6f9fd62b/>
+<Link_0f33c0637fe89f4766761301a1156075/>
+<Link_240baa00a35d63b960a5d860a8620a09/>
 </RadixThemesGrid>
 </RadixThemesFlex>
 </RadixThemesBox>

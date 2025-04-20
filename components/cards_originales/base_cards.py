@@ -1,7 +1,7 @@
 # components/cards_originales/base_cards.py
 
 import reflex as rx
-from styles.styles import styles, Size, Color
+from styles.styles import Color
 
 
 def base_card(children: rx.Component) -> rx.Component:

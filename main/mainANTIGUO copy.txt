@@ -7,7 +7,6 @@ from pages.creacion import creacion
 from pages.originales import originales
 from pages.accesorios import accesorios
 from pages.extras import extras
-from pages.contacto import contacto
 from styles.styles import styles
 from pages.page_card_accesorios import page_card_accesorios
 from pages.card_individual_originales import card_individual_originales
@@ -16,7 +15,7 @@ from pages.card_individual_originales import card_individual_originales
 # Metadatos para la página de inicio
 home_title = "Mochilas V3D | Diseño Innovador y Personalizado"
 home_description = "Descubre la colección de mochilas 3D únicas y personalizables. Expresa tu estilo con diseños vibrantes y funcionales."
-home_preview_image = "/mochilas_3d_preview.jpg"
+home_preview_image = "/assets/mochilas_3d_preview.jpg"
 
 
 # Layout común para todas las páginas
@@ -55,6 +54,7 @@ def index() -> rx.Component:
                 left="0",
                 width="100%",
                 height="100%",
+                # bg=styles.BACKGROUND_OVERLAY,
                 z_index="0",
             ),
             rx.vstack(
@@ -124,14 +124,12 @@ app.add_page(
 )
 app.add_page(lambda: layout(creacion()), route="/creacion", title="Creación")
 app.add_page(lambda: layout(extras()), route="/extras", title="Extras")
-app.add_page(lambda: layout(contacto()), route="/contacto", title="Contacto")
 app.add_page(lambda: layout(originales()), route="/originales", title="Originales")
 app.add_page(
     lambda id=None: layout(card_individual_originales(id)),
     route="/detalle_originales/[id]",
     title="Ficha Producto",
 )
-
 app.add_page(lambda: layout(accesorios()), route="/accesorios", title="Accesorios")
 app.add_page(
     lambda id=None: layout(page_card_accesorios(id)),

@@ -80,6 +80,6 @@ def complement_individual_card(
                 width="100%",
                 padding_x="10px",
                 padding_bottom="10px",
-            ),  # <-- ¡Aquí faltaba el paréntesis de cierre!
+            ), 
         )
     )

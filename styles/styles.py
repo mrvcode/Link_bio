@@ -13,12 +13,14 @@ class Color(str, Enum):
     WHITE = "#F1F1F1"
     ICON_COLOR = "#00FFAA"
     FONDO_CARDS = "rgba(0, 0, 0, 0.5)"
+    FONDO_CONTACTO = "#f2e3ce"
 
 
 class Size(Enum):
     SMALL = "1.2em"
     DEFAULT = "1.8em"
     BIG = "2.3em"
+    BIGX2 = "3.0em"
 
 
 class StyleConstants(Enum):
@@ -30,6 +32,7 @@ class styles:
     SMALL = Size.SMALL.value
     DEFAULT = Size.DEFAULT.value
     BIG = Size.BIG.value
+    BIGX2 = Size.BIGX2.value
 
     BACKGROUND_GRADIENT = (
         "radial-gradient(circle at 20% 30%, #1fcdae 0%, transparent 40%), "
@@ -37,10 +40,15 @@ class styles:
         "radial-gradient(circle at 40% 80%, #0a97b4 0%, transparent 40%), "
         "linear-gradient(to bottom, #000000, #000000)"
     )
-
+    BACKGROUND_GRADIENT_CONTACTO = (
+        "radial-gradient(circle at 30% 30%, #8f4a82 0%, transparent 40%), "
+        "radial-gradient(circle at 60% 70%, #0a97b4 0%, transparent 40%), "
+        "linear-gradient(to bottom, #13220c, #000000)"
+    )
     BACKGROUND_OVERLAY = "rgba(0, 0, 0, 0.5)"
     TEXT_COLOR = "#ffffff"
     TEXT_COLOR_AVATAR = Color.VIOLET_MEDIUM
+    TEXT_COLOR_CONTACTO = "#FFFFFF"
 
     BUTTON_BIG = {
         "width": "280px",

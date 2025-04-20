@@ -1,13 +1,55 @@
 /** @jsxImportSource @emotion/react */
 
 
-import { Fragment } from "react"
-import { Box as RadixThemesBox, Flex as RadixThemesFlex, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
+import { Fragment, useCallback, useContext } from "react"
+import { Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Grid as RadixThemesGrid, Link as RadixThemesLink, Text as RadixThemesText, TextField as RadixThemesTextField } from "@radix-ui/themes"
 import NextLink from "next/link"
 import { Book as LucideBook, Home as LucideHome, Mail as LucideMail, ShoppingCart as LucideShoppingCart, User as LucideUser } from "lucide-react"
+import { Root as RadixFormRoot } from "@radix-ui/react-form"
+import { EventLoopContext } from "$/utils/context"
+import { Event, getRefValue, getRefValues } from "$/utils/state"
 import NextHead from "next/head"
 
 
+
+export function Root_d3486a6a3e03493027c4875dc610d075 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  
+    const handleSubmit_72a9ef97d8ef8f1918e1a837a5797ccb = useCallback((ev) => {
+        const $form = ev.target
+        ev.preventDefault()
+        const form_data = {...Object.fromEntries(new FormData($form).entries()), ...({  })};
+
+        (((...args) => (addEvents([(Event("_call_function", ({ ["function"] : (() => null), ["callback"] : null }), ({ ["preventDefault"] : true })))], args, ({  }))))(ev));
+
+        if (false) {
+            $form.reset()
+        }
+    })
+    
+
+
+
+
+  
+  return (
+    <RadixFormRoot className={"Root "} css={({ ["width"] : "100%" })} method={"post"} onSubmit={handleSubmit_72a9ef97d8ef8f1918e1a837a5797ccb}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"4"}>
+
+<RadixThemesTextField.Root css={({ ["background"] : "#f2e3ce", ["borderRadius"] : "15px", ["height"] : "70px", ["width"] : "500px" })} name={"nombre y apellido"} placeholder={"Nombre y apellido"}/>
+<RadixThemesTextField.Root css={({ ["type"] : "email", ["background"] : "#f2e3ce", ["borderRadius"] : "15px", ["height"] : "70px", ["width"] : "500px" })} name={"email"} placeholder={"Correo Electr\u00f3nico"}/>
+<RadixThemesTextField.Root css={({ ["background"] : "#f2e3ce", ["borderRadius"] : "15px", ["height"] : "70px", ["width"] : "500px" })} name={"asunto"} placeholder={"Asunto"}/>
+<RadixThemesButton css={({ ["type"] : "submit", ["fontSize"] : "1.8em", ["background"] : "#c5aa97", ["color"] : "white", ["borderRadius"] : "15px", ["&:hover"] : ({ ["opacity"] : "0.9" }), ["height"] : "70px", ["width"] : "500px" })}>
+
+{"Enviar"}
+</RadixThemesButton>
+</RadixThemesFlex>
+</RadixFormRoot>
+  )
+}
 
 export default function Component() {
     
@@ -95,13 +137,42 @@ export default function Component() {
 </RadixThemesFlex>
 <RadixThemesBox css={({ ["flex"] : "1", ["minHeight"] : "100vh" })}>
 
+<RadixThemesBox css={({ ["backgroundImage"] : "radial-gradient(circle at 20% 30%, #1fcdae 0%, transparent 40%), radial-gradient(circle at 70% 20%, #cf6fd0 0%, transparent 40%), radial-gradient(circle at 40% 80%, #0a97b4 0%, transparent 40%), linear-gradient(to bottom, #000000, #000000)", ["backgroundSize"] : "cover", ["backgroundRepeat"] : "no-repeat", ["backgroundAttachment"] : "fixed", ["backgroundPosition"] : "center", ["width"] : "100%", ["minHeight"] : "100vh" })}>
+
+<RadixThemesBox css={({ ["position"] : "absolute", ["top"] : "1em", ["right"] : "2em", ["zIndex"] : "10" })}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.5em", ["fontWeight"] : "bold", ["color"] : "white" })}>
+
+{"Contacto"}
+</RadixThemesText>
+</RadixThemesBox>
+<RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["height"] : "100vh" })}>
+
+<RadixThemesGrid columns={"2"} gap={"2"}>
+
+<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["padding"] : "2em" })}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"4"}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.8em", ["fontWeight"] : "bold", ["color"] : "white", ["paddingBottom"] : "1em" })}>
+
+{"Contacta con nosotros"}
+</RadixThemesText>
 <RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
 
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["fontSize"] : "1.8em" })}>
+<RadixThemesBox css={({ ["padding"] : "4", ["width"] : "500px", ["borderRadius"] : "15px" })}>
 
-{"Producto no encontrado"}
-</RadixThemesText>
+<Root_d3486a6a3e03493027c4875dc610d075/>
+</RadixThemesBox>
 </RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)" })}/>
+<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)" })}/>
+<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)" })}/>
+</RadixThemesGrid>
+</RadixThemesFlex>
+</RadixThemesBox>
 </RadixThemesBox>
 <RadixThemesBox css={({ ["width"] : "100%", ["paddingTop"] : "20px", ["paddingBottom"] : "20px", ["marginTop"] : "auto" })}>
 
@@ -126,7 +197,7 @@ export default function Component() {
 
 <title>
 
-{"Detalle Original"}
+{"Contacto"}
 </title>
 <meta content={"favicon.ico"} property={"og:image"}/>
 </NextHead>
