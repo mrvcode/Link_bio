@@ -2,6 +2,7 @@ import reflex as rx
 from styles.styles import styles, Color, Size
 
 
+
 def extras() -> rx.Component:
     """
     Página de creación que muestra opciones para crear mochilas personalizadas.
@@ -37,6 +38,7 @@ def extras() -> rx.Component:
             max_width=styles.MAX_WIDTH,
             margin="0 auto",
         ),
+        
         background_image=styles.BACKGROUND_GRADIENT,
         background_size="cover",
         background_repeat="no-repeat",

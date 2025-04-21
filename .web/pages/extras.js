@@ -52,14 +52,14 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} className={"nav-link"} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["padding"] : "0.5rem", ["cursor"] : "pointer", ["transition"] : "all 0.3s ease", ["borderRadius"] : "8px", ["display"] : "flex", ["alignItems"] : "center" })}>
 
-<NextLink href={"/sobremi"} passHref={true}>
+<NextLink href={"/nosotros"} passHref={true}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"row"} gap={"1"}>
 
 <LucideUser css={({ ["color"] : "#00FFAA", ["&:hover"] : ({ ["transform"] : "scale(1.2)", ["transition"] : "transform 0.2s ease", ["filter"] : "brightness(1.3)" }) })} size={30}/>
 <RadixThemesText as={"p"} className={"tooltip-text"} css={({ ["color"] : "#00FFAA", ["fontSize"] : "1rem", ["opacity"] : 0, ["whiteSpace"] : "nowrap", ["transform"] : "translateX(-10px)", ["transition"] : "opacity 0.3s ease, transform 0.3s ease" })}>
 
-{"Sobre m\u00ed"}
+{"Nosotros"}
 </RadixThemesText>
 </RadixThemesFlex>
 </NextLink>
@@ -122,7 +122,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<img src={"favicon.ico"}/>
+<img css={({ ["width"] : "32px", ["height"] : "32px" })} src={"/favicon.ico"}/>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(false ? "_blank" : "")}>
 
 <NextLink href={"/creacion"} passHref={true}>

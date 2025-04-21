@@ -6,6 +6,7 @@ class Color(str, Enum):
     VIOLET_LIGHT = "#cf6fd0"
     VIOLET_MEDIUM = "#8f4a82"
     GREEN_DARK = "#13220c"
+    BLUE_LIGHT = "#5070c9"
     BLUE_MEDIUM = "#0a97b4"
     GREEN_LIGHT = "#0f828e"
     GREEN_MEDIUM = "#062821"
@@ -13,7 +14,8 @@ class Color(str, Enum):
     WHITE = "#F1F1F1"
     ICON_COLOR = "#00FFAA"
     FONDO_CARDS = "rgba(0, 0, 0, 0.5)"
-    FONDO_CONTACTO = "#f2e3ce"
+    FONDO_CARDS_LIGHT = "rgba(242, 227, 206, 0.1)"
+    FONDO_CONTACTO = "rgba(242, 227, 206, 0.5)"
 
 
 class Size(Enum):
@@ -51,10 +53,10 @@ class styles:
     TEXT_COLOR_CONTACTO = "#FFFFFF"
 
     BUTTON_BIG = {
-        "width": "280px",
-        "height": "300px",
+        "width": "380px",
+        "height": "400px",
         "border_radius": Size.DEFAULT.value,
-        "font_weight": "normal",
+        "font_weight": "bold",
         "margin": "0",
         "padding": Size.SMALL.value,
         # "padding": "8px",

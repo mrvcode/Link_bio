@@ -52,14 +52,14 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} className={"nav-link"} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["padding"] : "0.5rem", ["cursor"] : "pointer", ["transition"] : "all 0.3s ease", ["borderRadius"] : "8px", ["display"] : "flex", ["alignItems"] : "center" })}>
 
-<NextLink href={"/sobremi"} passHref={true}>
+<NextLink href={"/nosotros"} passHref={true}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"row"} gap={"1"}>
 
 <LucideUser css={({ ["color"] : "#00FFAA", ["&:hover"] : ({ ["transform"] : "scale(1.2)", ["transition"] : "transform 0.2s ease", ["filter"] : "brightness(1.3)" }) })} size={30}/>
 <RadixThemesText as={"p"} className={"tooltip-text"} css={({ ["color"] : "#00FFAA", ["fontSize"] : "1rem", ["opacity"] : 0, ["whiteSpace"] : "nowrap", ["transform"] : "translateX(-10px)", ["transition"] : "opacity 0.3s ease, transform 0.3s ease" })}>
 
-{"Sobre m\u00ed"}
+{"Nosotros"}
 </RadixThemesText>
 </RadixThemesFlex>
 </NextLink>
@@ -144,7 +144,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["marginTop"] : "25px", ["marginBottom"] : "25px" })} direction={"row"} justify={"center"} gap={"9"}>
 
-<RadixThemesButton asChild={true} css={({ ["width"] : "280px", ["height"] : "300px", ["borderRadius"] : "1.8em", ["fontWeight"] : "normal", ["margin"] : "0", ["padding"] : "1.2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["textAlign"] : "center", ["color"] : "#F1F1F1", ["background"] : "#0f828e", ["&:hover"] : ({ ["background"] : "#062821" }) })}>
+<RadixThemesButton asChild={true} css={({ ["width"] : "380px", ["height"] : "400px", ["borderRadius"] : "1.8em", ["fontWeight"] : "bold", ["margin"] : "0", ["padding"] : "1.2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["textAlign"] : "center", ["color"] : "#F1F1F1", ["background"] : "#0f828e", ["&:hover"] : ({ ["background"] : "#062821" }) })}>
 
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%", ["height"] : "100%" })} target={(false ? "_blank" : "")}>
 
@@ -152,11 +152,11 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["alignItems"] : "center" })} direction={"column"} justify={"center"} gap={"3"}>
 
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.8em", ["marginBottom"] : "4px" })}>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "2.3em", ["marginBottom"] : "4px" })}>
 
 {"Area de"}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.8em" })}>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "2.3em" })}>
 
 {"creaci\u00f3n"}
 </RadixThemesText>
@@ -164,13 +164,13 @@ export default function Component() {
 </NextLink>
 </RadixThemesLink>
 </RadixThemesButton>
-<RadixThemesButton asChild={true} css={({ ["width"] : "280px", ["height"] : "300px", ["borderRadius"] : "1.8em", ["fontWeight"] : "normal", ["margin"] : "0", ["padding"] : "1.2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["textAlign"] : "center", ["color"] : "#F1F1F1", ["background"] : "#0f828e", ["&:hover"] : ({ ["background"] : "#062821" }) })}>
+<RadixThemesButton asChild={true} css={({ ["width"] : "380px", ["height"] : "400px", ["borderRadius"] : "1.8em", ["fontWeight"] : "bold", ["margin"] : "0", ["padding"] : "1.2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["textAlign"] : "center", ["color"] : "#F1F1F1", ["background"] : "#0f828e", ["&:hover"] : ({ ["background"] : "#062821" }) })}>
 
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%", ["height"] : "100%" })} target={(false ? "_blank" : "")}>
 
 <NextLink href={"/accesorios"} passHref={true}>
 
-<RadixThemesText align={"center"} as={"p"} css={({ ["fontSize"] : "1.8em" })}>
+<RadixThemesText align={"center"} as={"p"} css={({ ["fontSize"] : "2.3em" })}>
 
 {"Accesorios"}
 </RadixThemesText>
@@ -184,7 +184,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["marginTop"] : "25px", ["marginBottom"] : "25px" })} direction={"row"} justify={"center"} gap={"9"}>
 
-<RadixThemesButton asChild={true} css={({ ["width"] : "280px", ["height"] : "300px", ["borderRadius"] : "1.8em", ["fontWeight"] : "normal", ["margin"] : "0", ["padding"] : "1.2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["textAlign"] : "center", ["color"] : "#F1F1F1", ["background"] : "#0f828e", ["&:hover"] : ({ ["background"] : "#062821" }) })}>
+<RadixThemesButton asChild={true} css={({ ["width"] : "380px", ["height"] : "400px", ["borderRadius"] : "1.8em", ["fontWeight"] : "bold", ["margin"] : "0", ["padding"] : "1.2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["textAlign"] : "center", ["color"] : "#F1F1F1", ["background"] : "#0f828e", ["&:hover"] : ({ ["background"] : "#062821" }) })}>
 
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%", ["height"] : "100%" })} target={(false ? "_blank" : "")}>
 
@@ -192,11 +192,11 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%", ["alignItems"] : "center" })} direction={"column"} justify={"center"} gap={"3"}>
 
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.8em", ["marginBottom"] : "4px" })}>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "2.3em", ["marginBottom"] : "4px" })}>
 
 {"Mochilas"}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.8em" })}>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "2.3em" })}>
 
 {"Originales"}
 </RadixThemesText>
@@ -204,13 +204,13 @@ export default function Component() {
 </NextLink>
 </RadixThemesLink>
 </RadixThemesButton>
-<RadixThemesButton asChild={true} css={({ ["width"] : "280px", ["height"] : "300px", ["borderRadius"] : "1.8em", ["fontWeight"] : "normal", ["margin"] : "0", ["padding"] : "1.2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["textAlign"] : "center", ["color"] : "#F1F1F1", ["background"] : "#0f828e", ["&:hover"] : ({ ["background"] : "#062821" }) })}>
+<RadixThemesButton asChild={true} css={({ ["width"] : "380px", ["height"] : "400px", ["borderRadius"] : "1.8em", ["fontWeight"] : "bold", ["margin"] : "0", ["padding"] : "1.2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["textAlign"] : "center", ["color"] : "#F1F1F1", ["background"] : "#0f828e", ["&:hover"] : ({ ["background"] : "#062821" }) })}>
 
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%", ["height"] : "100%" })} target={(false ? "_blank" : "")}>
 
 <NextLink href={"/extras"} passHref={true}>
 
-<RadixThemesText align={"center"} as={"p"} css={({ ["fontSize"] : "1.8em" })}>
+<RadixThemesText align={"center"} as={"p"} css={({ ["fontSize"] : "2.3em" })}>
 
 {"Extras"}
 </RadixThemesText>
@@ -230,7 +230,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<img src={"favicon.ico"}/>
+<img css={({ ["width"] : "32px", ["height"] : "32px" })} src={"/favicon.ico"}/>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(false ? "_blank" : "")}>
 
 <NextLink href={"/creacion"} passHref={true}>
@@ -252,7 +252,7 @@ export default function Component() {
 {"Mochilas V3D | Dise\u00f1o Innovador y Personalizado"}
 </title>
 <meta content={"Descubre la colecci\u00f3n de mochilas 3D \u00fanicas y personalizables. Expresa tu estilo con dise\u00f1os vibrantes y funcionales."} name={"description"}/>
-<meta content={"/assets/favicon.ico"} property={"og:image"}/>
+<meta content={"/favicon.ico"} property={"og:image"}/>
 <meta content={"website"} name={"og:type"}/>
 <meta content={"Mochilas V3D | Dise\u00f1o Innovador y Personalizado"} name={"og:title"}/>
 <meta content={"Descubre la colecci\u00f3n de mochilas 3D \u00fanicas y personalizables. Expresa tu estilo con dise\u00f1os vibrantes y funcionales."} name={"og:description"}/>

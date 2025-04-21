@@ -12,7 +12,7 @@ import NextHead from "next/head"
 
 
 
-export function Root_d3486a6a3e03493027c4875dc610d075 () {
+export function Root_cb4626b99b358dab4d63095580bdf96d () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -39,10 +39,10 @@ export function Root_d3486a6a3e03493027c4875dc610d075 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"4"}>
 
-<RadixThemesTextField.Root css={({ ["background"] : "#f2e3ce", ["borderRadius"] : "15px", ["height"] : "70px", ["width"] : "500px" })} name={"nombre y apellido"} placeholder={"Nombre y apellido"}/>
-<RadixThemesTextField.Root css={({ ["type"] : "email", ["background"] : "#f2e3ce", ["borderRadius"] : "15px", ["height"] : "70px", ["width"] : "500px" })} name={"email"} placeholder={"Correo Electr\u00f3nico"}/>
-<RadixThemesTextField.Root css={({ ["background"] : "#f2e3ce", ["borderRadius"] : "15px", ["height"] : "70px", ["width"] : "500px" })} name={"asunto"} placeholder={"Asunto"}/>
-<RadixThemesButton css={({ ["type"] : "submit", ["fontSize"] : "1.8em", ["background"] : "#c5aa97", ["color"] : "white", ["borderRadius"] : "15px", ["&:hover"] : ({ ["opacity"] : "0.9" }), ["height"] : "70px", ["width"] : "500px" })}>
+<RadixThemesTextField.Root css={({ ["fontSize"] : "1.8em", ["color"] : "#5070c9", ["&:placeholder"] : ({ ["color"] : "#0a97b4" }), ["background"] : "rgba(242, 227, 206, 0.5)", ["borderRadius"] : "15px", ["height"] : "70px", ["width"] : "500px", ["paddingInlineStart"] : "15px", ["paddingInlineEnd"] : "15px" })} name={"nombre y apellido"} placeholder={"Nombre y apellido"}/>
+<RadixThemesTextField.Root css={({ ["type"] : "email", ["fontSize"] : "1.8em", ["color"] : "#5070c9", ["&:placeholder"] : ({ ["color"] : "#0a97b4" }), ["background"] : "rgba(242, 227, 206, 0.5)", ["borderRadius"] : "15px", ["height"] : "70px", ["width"] : "500px", ["paddingInlineStart"] : "15px", ["paddingInlineEnd"] : "15px" })} name={"email"} placeholder={"Correo Electr\u00f3nico"}/>
+<RadixThemesTextField.Root css={({ ["fontSize"] : "1.8em", ["color"] : "#5070c9", ["&:placeholder"] : ({ ["color"] : "#062821" }), ["background"] : "rgba(242, 227, 206, 0.5)", ["borderRadius"] : "15px", ["height"] : "70px", ["width"] : "500px", ["paddingInlineStart"] : "15px", ["paddingInlineEnd"] : "15px" })} name={"asunto"} placeholder={"Asunto"}/>
+<RadixThemesButton css={({ ["type"] : "submit", ["fontSize"] : "1.8em", ["background"] : "#5070c9", ["color"] : "#F1F1F1", ["borderRadius"] : "15px", ["&:hover"] : ({ ["opacity"] : "0.9" }), ["height"] : "70px", ["width"] : "500px" })}>
 
 {"Enviar"}
 </RadixThemesButton>
@@ -94,14 +94,14 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} className={"nav-link"} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["padding"] : "0.5rem", ["cursor"] : "pointer", ["transition"] : "all 0.3s ease", ["borderRadius"] : "8px", ["display"] : "flex", ["alignItems"] : "center" })}>
 
-<NextLink href={"/sobremi"} passHref={true}>
+<NextLink href={"/nosotros"} passHref={true}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"row"} gap={"1"}>
 
 <LucideUser css={({ ["color"] : "#00FFAA", ["&:hover"] : ({ ["transform"] : "scale(1.2)", ["transition"] : "transform 0.2s ease", ["filter"] : "brightness(1.3)" }) })} size={30}/>
 <RadixThemesText as={"p"} className={"tooltip-text"} css={({ ["color"] : "#00FFAA", ["fontSize"] : "1rem", ["opacity"] : 0, ["whiteSpace"] : "nowrap", ["transform"] : "translateX(-10px)", ["transition"] : "opacity 0.3s ease, transform 0.3s ease" })}>
 
-{"Sobre m\u00ed"}
+{"Nosotros"}
 </RadixThemesText>
 </RadixThemesFlex>
 </NextLink>
@@ -146,30 +146,52 @@ export default function Component() {
 {"Contacto"}
 </RadixThemesText>
 </RadixThemesBox>
-<RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["height"] : "100vh" })}>
+<RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["height"] : "100vh", ["width"] : "100%" })}>
 
-<RadixThemesGrid columns={"2"} gap={"2"}>
+<RadixThemesGrid columns={"2"} css={({ ["width"] : "auto", ["padding"] : "2em" })} gap={"2"}>
 
-<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)", ["padding"] : "2em" })}>
+<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(242, 227, 206, 0.1)", ["padding"] : "2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
 
-<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"4"}>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%", ["height"] : "100%" })} direction={"column"} justify={"center"} gap={"3"}>
 
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.8em", ["fontWeight"] : "bold", ["color"] : "white", ["paddingBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "3.0em", ["fontWeight"] : "bold", ["color"] : "white", ["paddingBottom"] : "1em" })}>
 
 {"Contacta con nosotros"}
 </RadixThemesText>
+<RadixThemesBox css={({ ["marginLeft"] : "auto", ["marginRight"] : "auto" })}>
+
 <RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
 
 <RadixThemesBox css={({ ["padding"] : "4", ["width"] : "500px", ["borderRadius"] : "15px" })}>
 
-<Root_d3486a6a3e03493027c4875dc610d075/>
+<Root_cb4626b99b358dab4d63095580bdf96d/>
 </RadixThemesBox>
 </RadixThemesFlex>
+</RadixThemesBox>
 </RadixThemesFlex>
 </RadixThemesBox>
-<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)" })}/>
-<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)" })}/>
-<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(0, 0, 0, 0.5)" })}/>
+<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(242, 227, 206, 0.1)", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["padding"] : "1em", ["overflow"] : "hidden" })}>
+
+<img css={({ ["maxWidth"] : "400px", ["maxHeight"] : "400px" })} src={"/contacto.jpg"}/>
+</RadixThemesBox>
+<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(242, 227, 206, 0.1)", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["padding"] : "1em", ["overflow"] : "hidden" })}>
+
+<img css={({ ["maxWidth"] : "400px", ["maxHeight"] : "400px" })} src={"/contacto1.jpg"}/>
+</RadixThemesBox>
+<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(242, 227, 206, 0.1)", ["padding"] : "2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%", ["height"] : "100%" })} direction={"column"} justify={"center"} gap={"4"}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "3.0em", ["fontWeight"] : "bold", ["color"] : "white", ["paddingBottom"] : "0.8em" })}>
+
+{"D\u00f3nde estamos?"}
+</RadixThemesText>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "2.3em", ["color"] : "white", ["whiteSpace"] : "pre-wrap", ["lineHeight"] : "1.6", ["textAlign"] : "center" })}>
+
+{"123 Calle de la Mochila\n28001 Madrid\nEspa\u00f1a"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesBox>
 </RadixThemesGrid>
 </RadixThemesFlex>
 </RadixThemesBox>
@@ -178,7 +200,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<img src={"favicon.ico"}/>
+<img css={({ ["width"] : "32px", ["height"] : "32px" })} src={"/favicon.ico"}/>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(false ? "_blank" : "")}>
 
 <NextLink href={"/creacion"} passHref={true}>

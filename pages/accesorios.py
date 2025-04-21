@@ -10,37 +10,37 @@ ACCESORIOS = [
         "id": 1,
         "nombre": "Pencil Case",
         "descripcion": "Pencils near you",
-        "imagen": "/image_accesorios/accesorio.jpg",
+        "imagen": "/accesorio.jpg",
     },
     {
         "id": 2,
         "nombre": "Water Bag 3L",
         "descripcion": "Drink wherever",
-        "imagen": "/image_accesorios/accesorio.jpg",
+        "imagen": "/accesorio.jpg",
     },
     {
         "id": 3,
         "nombre": "Rain Cover",
         "descripcion": "Protect yourself",
-        "imagen": "/image_accesorios/accesorio.jpg",
+        "imagen": "/accesorio.jpg",
     },
     {
         "id": 4,
         "nombre": "Pencil Case",
         "descripcion": "Pencils near you",
-        "imagen": "/image_accesorios/accesorio.jpg",
+        "imagen": "/accesorio.jpg",
     },
     {
         "id": 5,
         "nombre": "Water Bag 3L",
         "descripcion": "Drink wherever",
-        "imagen": "/image_accesorios/accesorio.jpg",
+        "imagen": "/accesorio.jpg",
     },
     {
         "id": 6,
         "nombre": "Rain Cover",
         "descripcion": "Protect yourself",
-        "imagen": "/image_accesorios/accesorio.jpg",
+        "imagen": "/accesorio.jpg",
     },
     # ... más accesorios
 ]

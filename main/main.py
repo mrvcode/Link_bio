@@ -8,6 +8,7 @@ from pages.originales import originales
 from pages.accesorios import accesorios
 from pages.extras import extras
 from pages.contacto import contacto
+from pages.nosotros import nosotros
 from styles.styles import styles
 from pages.page_card_accesorios import page_card_accesorios
 from pages.card_individual_originales import card_individual_originales
@@ -114,17 +115,18 @@ app.add_page(
     route="/",
     title=home_title,
     description=home_description,
-    image="/assets/favicon.ico",
+    image="/favicon.ico",    
     meta=[
         {"name": "og:type", "content": "website"},
         {"name": "og:title", "content": home_title},
         {"name": "og:description", "content": home_description},
-        {"name": "og:image", "content": home_preview_image},
+        {"name": "og:image", "content": "/mochilas_3d_preview.jpg"},
     ],
 )
 app.add_page(lambda: layout(creacion()), route="/creacion", title="Creación")
 app.add_page(lambda: layout(extras()), route="/extras", title="Extras")
 app.add_page(lambda: layout(contacto()), route="/contacto", title="Contacto")
+app.add_page(lambda: layout(nosotros()), route="/nosotros", title="Nosotros")
 app.add_page(lambda: layout(originales()), route="/originales", title="Originales")
 app.add_page(
     lambda id=None: layout(card_individual_originales(id)),

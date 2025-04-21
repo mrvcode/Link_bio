@@ -6,7 +6,7 @@ from styles.styles import styles, Color
 menu_items = [
     {"icon": "shopping-cart", "text": "Carrito", "link": "/carrito"},
     {"icon": "home", "text": "Inicio", "link": "/"},
-    {"icon": "user", "text": "Sobre mí", "link": "/sobremi"},
+    {"icon": "user", "text": "Nosotros", "link": "/nosotros"},
     {"icon": "book", "text": "Proyectos", "link": "/proyectos"},
     {"icon": "mail", "text": "Contacto", "link": "/contacto"},
 ]

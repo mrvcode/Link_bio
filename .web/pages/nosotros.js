@@ -2,7 +2,7 @@
 
 
 import { Fragment } from "react"
-import { Box as RadixThemesBox, Flex as RadixThemesFlex, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
+import { Box as RadixThemesBox, Flex as RadixThemesFlex, Grid as RadixThemesGrid, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
 import NextLink from "next/link"
 import { Book as LucideBook, Home as LucideHome, Mail as LucideMail, ShoppingCart as LucideShoppingCart, User as LucideUser } from "lucide-react"
 import NextHead from "next/head"
@@ -95,13 +95,32 @@ export default function Component() {
 </RadixThemesFlex>
 <RadixThemesBox css={({ ["flex"] : "1", ["minHeight"] : "100vh" })}>
 
-<RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+<RadixThemesBox css={({ ["backgroundImage"] : "radial-gradient(circle at 20% 30%, #1fcdae 0%, transparent 40%), radial-gradient(circle at 70% 20%, #cf6fd0 0%, transparent 40%), radial-gradient(circle at 40% 80%, #0a97b4 0%, transparent 40%), linear-gradient(to bottom, #000000, #000000)", ["backgroundSize"] : "cover", ["backgroundRepeat"] : "no-repeat", ["backgroundAttachment"] : "fixed", ["backgroundPosition"] : "center", ["width"] : "100%", ["minHeight"] : "100vh" })}>
 
-<RadixThemesText as={"p"} css={({ ["color"] : "#F1F1F1", ["fontSize"] : "1.8em" })}>
+<RadixThemesBox css={({ ["position"] : "absolute", ["top"] : "1em", ["right"] : "2em", ["zIndex"] : "10" })}>
 
-{"No se proporcion\u00f3 un ID de accesorio."}
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "1.5em", ["fontWeight"] : "bold", ["color"] : "white" })}>
+
+{"Nosotros"}
+</RadixThemesText>
+</RadixThemesBox>
+<RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["height"] : "100vh", ["width"] : "100%" })}>
+
+<RadixThemesGrid columns={"2"} css={({ ["width"] : "auto", ["padding"] : "2em" })} gap={"2"}>
+
+<RadixThemesBox css={({ ["width"] : "600px", ["height"] : "600px", ["borderRadius"] : "15px", ["backgroundColor"] : "rgba(242, 227, 206, 0.1)", ["padding"] : "2em", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["width"] : "100%", ["height"] : "100%" })} direction={"column"} justify={"center"} gap={"3"}>
+
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "3.0em", ["fontWeight"] : "bold", ["color"] : "white", ["paddingBottom"] : "1em" })}>
+
+{"La idea original"}
 </RadixThemesText>
 </RadixThemesFlex>
+</RadixThemesBox>
+</RadixThemesGrid>
+</RadixThemesFlex>
+</RadixThemesBox>
 </RadixThemesBox>
 <RadixThemesBox css={({ ["width"] : "100%", ["paddingTop"] : "20px", ["paddingBottom"] : "20px", ["marginTop"] : "auto" })}>
 
@@ -126,7 +145,7 @@ export default function Component() {
 
 <title>
 
-{"Detalle Accesorio"}
+{"Nosotros"}
 </title>
 <meta content={"favicon.ico"} property={"og:image"}/>
 </NextHead>

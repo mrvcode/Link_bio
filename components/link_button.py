@@ -5,11 +5,11 @@ from styles.styles import styles, Size
 def link_button(text_line1: str, text_line2: str = "", url: str = "") -> rx.Component:
     # Creamos el contenido del botón
     if not text_line2:
-        content = rx.text(text_line1, font_size=Size.DEFAULT.value, align="center")
+        content = rx.text(text_line1, font_size=Size.BIG.value, align="center")
     else:
         content = rx.vstack(
-            rx.text(text_line1, font_size=Size.DEFAULT.value, margin_bottom="4px"),
-            rx.text(text_line2, font_size=Size.DEFAULT.value),
+            rx.text(text_line1, font_size=Size.BIG.value, margin_bottom="4px"),
+            rx.text(text_line2, font_size=Size.BIG.value),
             width="100%",
             spacing="3",
             justify="center",
